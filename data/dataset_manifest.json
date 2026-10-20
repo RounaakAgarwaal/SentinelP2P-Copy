@@ -1,0 +1,30 @@
+{
+  "seed": 42,
+  "reference_date": "2026-09-30",
+  "approval_limit": 15000,
+  "rate_tolerance": 1.3,
+  "cases_per_type": 8,
+  "evasive_share": 0.25,
+  "benign_traps": 5,
+  "fraud_types": [
+    "shell_vendor",
+    "split_po",
+    "duplicate_invoice",
+    "same_creator_approver",
+    "new_vendor_high_value",
+    "contract_rate_mismatch",
+    "vendor_employee_email",
+    "category_mismatch"
+  ],
+  "counts": {
+    "employees": 100,
+    "vendors": 304,
+    "contracts": 133,
+    "purchase_orders": 674,
+    "invoices": 644,
+    "ground_truth": 644,
+    "ground_truth_cases": 69
+  },
+  "fraud_invoices": 88,
+  "fraud_rate": 0.1366
+}

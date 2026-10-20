@@ -1,0 +1,9 @@
+rule,fraud_type,flagged,tp,fp,fn,precision,recall,recall_standard,recall_evasive
+rule_shell_vendor,shell_vendor,16,16,0,0,1.0,1.0,1.0,
+rule_split_po,split_po,12,12,0,4,1.0,0.75,1.0,0.0
+rule_duplicate_invoice,duplicate_invoice,6,6,0,2,1.0,0.75,1.0,0.0
+rule_same_creator_approver,same_creator_approver,8,8,0,0,1.0,1.0,1.0,
+rule_new_vendor_high_value,new_vendor_high_value,6,6,0,2,1.0,0.75,1.0,0.0
+rule_contract_rate_mismatch,contract_rate_mismatch,6,6,0,2,1.0,0.75,1.0,0.0
+rule_vendor_employee_email,vendor_employee_email,16,16,0,0,1.0,1.0,1.0,
+rule_category_mismatch,category_mismatch,8,8,0,0,1.0,1.0,1.0,

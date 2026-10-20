@@ -1,0 +1,305 @@
+vendor_id,vendor_name,email,phone,address,bank_account,registration_number,vendor_category,onboarding_date,has_contract,created_by_employee_id
+VEN001,Sandal and Sons,contact@sandalandsons.com,+91-94771-04278,"H.No. 831, Deol Chowk, Bettiah-798687",344713493618,REG-40173413,Logistics,2024-10-03,Yes,EMP071
+VEN002,Tara-Sathe,contact@tarasathe.com,+91-78850-32853,"H.No. 82, Sarma Road, Bhilai 932480",210205395024,REG-17032877,Catering,2024-10-03,No,EMP022
+VEN003,Goel-Som,contact@goelsom.com,+91-80230-42233,"414, Raju Nagar, Ujjain 333468",830033542168,REG-89010042,IT Hardware,2024-10-05,No,EMP086
+VEN004,Sarma-Loyal,contact@sarmaloyal.com,+91-99586-63298,"H.No. 21, Ratta Marg, Darbhanga 762120",829221699586,REG-66192230,Software Licensing,2024-10-05,No,EMP066
+VEN005,Acharya PLC,contact@acharyaplc.com,+91-93558-44815,"H.No. 78, Swamy Nagar, Dewas-649308",647570512046,REG-19581091,Office Supplies,2024-10-09,Yes,EMP004
+VEN006,Chawla Group,contact@chawlagroup.com,+91-91843-54321,"13/552, Nayak Zila, Hyderabad-331541",229991191485,REG-65148727,Printing & Packaging,2024-10-13,No,EMP070
+VEN007,"Narang, Chadha and Rattan",contact@narangchadhaandrat.com,+91-67846-31797,"753, Lal Nagar, Noida 454990",936385467854,REG-45106207,Office Supplies,2024-10-16,No,EMP086
+VEN008,"Chaudhuri, Venkatesh and Madan",contact@chaudhurivenkatesh.com,+91-61489-79194,"H.No. 891, Comar Road, Mehsana-934835",948837550375,REG-85182173,IT Hardware,2024-10-19,Yes,EMP007
+VEN009,Trivedi-Chaudhary,contact@trivedichaudhary.com,+91-75599-51491,"81/23, Shankar Circle, Thane 845762",216893639264,REG-91251236,Software Licensing,2024-10-31,No,EMP040
+VEN010,Mani-Dugar,contact@manidugar.com,+91-96878-59460,"H.No. 94, Krishna Marg, Barasat 671369",525459910229,REG-16679008,IT Hardware,2024-11-01,No,EMP031
+VEN011,"Amble, Virk and Dalal",contact@amblevirkanddalal.com,+91-71422-36167,"35/651, Sandhu Street, Bhilwara 959463",656693801184,REG-85042992,Catering,2024-11-06,Yes,EMP004
+VEN012,"Balasubramanian, Som and Dugar",contact@balasubramaniansom.com,+91-92435-47948,"68/424, Apte Path, Amravati-099688",639427881658,REG-11421591,Software Licensing,2024-11-07,Yes,EMP098
+VEN013,Karnik-Subramaniam,contact@karniksubramaniam.com,+91-89788-07531,"91/62, Sood Road, Gwalior-986430",277038430988,REG-41094351,Cleaning Services,2024-11-08,Yes,EMP055
+VEN014,Sachdev-Chadha,contact@sachdevchadha.com,+91-98290-03268,"H.No. 74, Vohra Ganj, Akola-503178",782357845218,REG-27812995,Printing & Packaging,2024-11-08,Yes,EMP009
+VEN015,Bahl LLC,contact@bahlllc.com,+91-69449-34688,"98/61, Khanna Road, Bhilai-369711",396907844736,REG-49920898,Printing & Packaging,2024-11-12,No,EMP009
+VEN016,Guha-Biswas,contact@guhabiswas.com,+91-64150-63075,"H.No. 17, Sethi, Pallavaram-502080",435031365024,REG-88476684,Cleaning Services,2024-11-13,No,EMP063
+VEN017,Desai-Krishna,contact@desaikrishna.com,+91-60214-27359,"78/487, Grover Ganj, North Dumdum 498218",717058650948,REG-15456373,Catering,2024-11-20,Yes,EMP083
+VEN018,Patel Inc,contact@patelinc.com,+91-87605-66207,"H.No. 97, Chatterjee Ganj, Tiruppur-417146",610357972798,REG-56943979,Catering,2024-11-21,No,EMP042
+VEN019,"Goel, Shah and Parsa",contact@goelshahandparsa.com,+91-67924-94905,"H.No. 55, Bir Marg, Jamalpur 472145",946954899529,REG-85515502,IT Hardware,2024-11-29,No,EMP077
+VEN020,"Shere, Morar and Bains",contact@sheremorarandbains.com,+91-97993-02061,"H.No. 391, Sampath Nagar, Rajkot-170462",088600848408,REG-67790557,Software Licensing,2024-12-01,No,EMP099
+VEN021,"Uppal, Hari and Palla",contact@uppalhariandpalla.com,+91-64807-26422,"124, Ghose Ganj, Aurangabad 779979",030548687403,REG-48401154,Cleaning Services,2024-12-04,No,EMP061
+VEN022,Kale LLC,contact@kalellc.com,+91-98584-10911,"54, Parsa Path, Hapur-615939",149216433472,REG-27619715,Logistics,2024-12-05,No,EMP004
+VEN023,Bhatia Ltd,contact@bhatialtd.com,+91-76950-13621,"05/71, Kapur, Patiala 066658",386120750110,REG-33889703,Office Supplies,2024-12-07,No,EMP089
+VEN024,Baria-Sangha,contact@bariasangha.com,+91-84937-79503,"294, Narayanan Nagar, Bhatpara 259094",147660728326,REG-83245898,Catering,2024-12-14,No,EMP012
+VEN025,Modi LLC,contact@modillc.com,+91-72444-73772,"95/77, Kala Chowk, Gulbarga-489513",413186999386,REG-70467027,Software Licensing,2024-12-15,No,EMP007
+VEN026,D’Alia-Chatterjee,contact@daliachatterjee.com,+91-75724-46019,"75, Saini Circle, Vijayanagaram-796405",231243292127,REG-72270726,Software Licensing,2024-12-18,No,EMP063
+VEN027,Keer-Raju,contact@keerraju.com,+91-82050-81922,"051, Dhingra Path, Agra 727790",498182992299,REG-55314533,Catering,2024-12-20,Yes,EMP066
+VEN028,"Hayer, Sha and Raval",contact@hayershaandraval.com,+91-68871-05539,"681, Bora Circle, Mau 848947",759579472846,REG-39808788,Cleaning Services,2024-12-20,No,EMP062
+VEN029,Merchant-Merchant,contact@merchantmerchant.com,+91-99946-57939,"H.No. 09, Taneja Nagar, Berhampur 339421",643815614978,REG-99541016,Catering,2024-12-23,Yes,EMP059
+VEN030,Dey Inc,contact@deyinc.com,+91-87317-01493,"236, Chad Path, Aurangabad 137215",433154100676,REG-32325567,Printing & Packaging,2024-12-30,No,EMP077
+VEN031,Narula-Khanna,contact@narulakhanna.com,+91-86889-43426,"H.No. 50, Mitter Path, Parbhani 132475",549471709991,REG-73380252,Office Supplies,2024-12-31,Yes,EMP086
+VEN032,"Ray, Suresh and Khosla",contact@raysureshandkhosla.com,+91-67269-21805,"01, Kant Road, Latur-957885",400504556238,REG-65304649,Printing & Packaging,2025-01-09,No,EMP094
+VEN033,Varkey-Trivedi,contact@varkeytrivedi.com,+91-85851-16805,"H.No. 435, Butala Circle, Rourkela-133613",314913577594,REG-88405961,Office Supplies,2025-01-09,No,EMP062
+VEN034,"Samra, Sunder and Sathe",contact@samrasunderandsath.com,+91-72254-05020,"815, Choudhry Marg, Guntakal-840369",472779010432,REG-83659258,Printing & Packaging,2025-01-10,No,EMP049
+VEN035,"Tripathi, Tripathi and Bahri",contact@tripathitripathian.com,+91-87366-32495,"H.No. 654, Parikh Nagar, Hapur-195205",210469632595,REG-35479101,Catering,2025-01-17,Yes,EMP012
+VEN036,Bhalla-Andra,contact@bhallaandra.com,+91-77303-49036,"65, Chandran, Berhampur-974014",679825071461,REG-25578562,IT Hardware,2025-01-17,Yes,EMP040
+VEN037,Garde-Golla,contact@gardegolla.com,+91-88571-26433,"24, Goswami Circle, Hubli–Dharwad 534655",564208737530,REG-11711195,Logistics,2025-01-17,Yes,EMP031
+VEN038,"Sengupta, Babu and Bansal",siddharth.zacharia@sentinelcorp.com,+91-69359-97053,"H.No. 06, Kakar Zila, Jorhat 931027",947113633792,REG-33292561,Office Supplies,2025-01-18,No,EMP031
+VEN039,Menon-Sheth,contact@menonsheth.com,+91-71475-67070,"H.No. 999, Sodhi Zila, Orai 684602",114374470120,REG-48999266,Printing & Packaging,2025-01-22,No,EMP062
+VEN040,"Misra, Kar and Mishra",contact@misrakarandmishra.com,+91-63943-27011,"75/758, Mani Road, Chapra 652404",119079030673,REG-82445335,IT Hardware,2025-01-24,No,EMP059
+VEN041,Deo Inc,contact@deoinc.com,+91-74873-80541,"88, Reddy Circle, Indore-581995",912513412528,REG-62138657,Catering,2025-01-25,Yes,EMP061
+VEN042,Suri Inc,contact@suriinc.com,+91-86319-90426,"66/676, Barad Nagar, Dindigul-583003",762120216979,REG-68809216,Logistics,2025-01-25,Yes,EMP061
+VEN043,"Raja, Verma and Karan",contact@rajavermaandkaran.com,+91-70483-41771,"26/49, Sen Path, Tiruppur-983248",664742312209,REG-92805158,Office Supplies,2025-01-30,Yes,EMP098
+VEN044,Saha-Chakraborty,contact@sahachakraborty.com,+91-86768-07086,"678, Bhalla Path, Amritsar-862890",223569725217,REG-54644768,Printing & Packaging,2025-01-31,No,EMP063
+VEN045,Chaudry LLC,contact@chaudryllc.com,+91-69520-90538,"70/312, Tak Nagar, Tiruvottiyur 475705",792513271950,REG-18022882,Logistics,2025-01-31,No,EMP004
+VEN046,"Biswas, Keer and Mani",contact@biswaskeerandmani.com,+91-90842-37700,"11, Ganesan Chowk, Bhopal-504556",945198327315,REG-84660688,Logistics,2025-02-03,Yes,EMP082
+VEN047,"Dash, Mital and Tripathi",contact@dashmitalandtripat.com,+91-60200-75243,"H.No. 64, Datta Circle, Bidar 299468",477752047116,REG-76001106,Cleaning Services,2025-02-07,No,EMP062
+VEN048,"Reddy, Chander and Kar",contact@reddychanderandkar.com,+91-67802-58756,"H.No. 274, Mahajan Circle, Karawal Nagar 378263",589178390847,REG-96347724,Cleaning Services,2025-02-07,Yes,EMP012
+VEN049,"Sur, Nadig and Ghosh",contact@surnadigandghosh.com,+91-93308-82211,"92/644, Goel Street, Chapra 902959",294511686854,REG-79751366,IT Hardware,2025-02-07,Yes,EMP082
+VEN050,"Chauhan, Varty and Dash",contact@chauhanvartyanddas.com,+91-72114-56704,"478, Sarkar Street, Korba 506068",801824225358,REG-48124318,Printing & Packaging,2025-02-09,No,EMP077
+VEN051,"Hayre, Guha and Dara",contact@hayreguhaanddara.com,+91-65415-61122,"35, Sachdeva Zila, Giridih-779827",202590947985,REG-19781894,Office Supplies,2025-02-11,No,EMP042
+VEN052,"Ranganathan, Chaudry and Amble",contact@ranganathanchaudry.com,+91-72017-48049,"H.No. 17, Nayar Zila, Anantapur 443283",064890901001,REG-65938669,Office Supplies,2025-02-12,No,EMP070
+VEN053,Kothari Ltd,contact@kothariltd.com,+91-76434-64154,"90/965, Cherian Marg, Navi Mumbai 388899",294667116845,REG-71028216,Office Supplies,2025-02-13,Yes,EMP049
+VEN054,"Tandon, Vaidya and Chowdhury",contact@tandonvaidyaandcho.com,+91-95986-71612,"58/07, Kamdar Circle, Kota 407451",271091043006,REG-77996124,Logistics,2025-02-13,No,EMP070
+VEN055,"Saxena, Deshmukh and Zacharia",contact@saxenadeshmukhandz.com,+91-94458-91812,"96/884, Subramaniam Path, Hubli–Dharwad-456424",973502080214,REG-46130759,Catering,2025-02-17,Yes,EMP061
+VEN056,"Modi, Chada and Kothari",contact@modichadaandkothar.com,+91-65061-57779,"99/38, Seshadri Marg, Bihar Sharif 499091",095214562328,REG-59104566,Cleaning Services,2025-02-18,Yes,EMP077
+VEN057,Modi-Rau,contact@modirau.com,+91-91902-12739,"19, Sankaran Nagar, Mahbubnagar 013990",382675869261,REG-75679047,IT Hardware,2025-02-21,No,EMP045
+VEN058,Rajagopal Group,contact@rajagopalgroup.com,+91-95759-56280,"82/827, Dey Road, Satna-905072",523413899940,REG-98369672,Printing & Packaging,2025-02-21,Yes,EMP086
+VEN059,Saxena and Sons,contact@saxenaandsons.com,+91-82041-94339,"H.No. 919, Narang Marg, Ghaziabad 329022",165837379274,REG-89431668,Office Supplies,2025-02-21,No,EMP061
+VEN060,"Bali, Gola and Murty",contact@baligolaandmurty.com,+91-78537-63298,"26/14, Khosla Street, Panvel 621850",571775140105,REG-96969050,Catering,2025-02-23,Yes,EMP061
+VEN061,"Mohanty, Chawla and Jha",contact@mohantychawlaandjh.com,+91-98882-40508,"02, Chander Road, Ahmednagar-571918",270103930870,REG-54524582,Software Licensing,2025-02-23,No,EMP093
+VEN062,"Pandya, Bora and Ranganathan",contact@pandyaboraandranga.com,+91-83941-74798,"H.No. 715, Sanghvi, Erode 160529",621851888880,REG-62405812,Catering,2025-02-25,Yes,EMP071
+VEN063,"Hora, Sura and Rana",contact@horasuraandrana.com,+91-65624-90937,"146, Chakraborty Path, Haridwar-553559",147705383388,REG-44716489,Printing & Packaging,2025-03-01,No,EMP045
+VEN064,Aurora LLC,contact@aurorallc.com,+91-81381-66132,"H.No. 240, Sama Street, Rajkot-758917",203778892554,REG-61998170,IT Hardware,2025-03-04,Yes,EMP092
+VEN065,"Saran, Bora and Dube",contact@saranboraanddube.com,+91-87017-22103,"50/110, Krishnamurthy Street, Ramgarh 466766",053364525777,REG-58149482,Software Licensing,2025-03-06,No,EMP092
+VEN066,"Raghavan, Nayar and Balakrishnan",contact@raghavannayarandba.com,+91-86512-85175,"735, Oak Road, Kavali-808313",158657809134,REG-40532691,IT Hardware,2025-03-08,Yes,EMP042
+VEN067,"Dugal, Chad and Ramakrishnan",contact@dugalchadandramakr.com,+91-93614-34469,"472, Vyas Street, Bhopal 557784",163894484631,REG-34482277,Cleaning Services,2025-03-17,No,EMP055
+VEN068,Sarkar and Sons,contact@sarkarandsons.com,+91-75422-73380,"99/65, Mahajan Nagar, Pallavaram 586629",673622660937,REG-89484162,Cleaning Services,2025-03-18,Yes,EMP028
+VEN069,"Salvi, Pau and Gera",contact@salvipauandgera.com,+91-68780-46961,"H.No. 910, Kale Road, Allahabad-848666",374741124903,REG-53995720,Logistics,2025-03-18,Yes,EMP059
+VEN070,Das-Roy,contact@dasroy.com,+91-83891-58222,"04/945, Tripathi Zila, Bhatpara 315851",947383473597,REG-71965637,Cleaning Services,2025-03-19,Yes,EMP059
+VEN071,Parmer-Mody,contact@parmermody.com,+91-83465-19692,"914, Yohannan Street, Firozabad-108099",225913651777,REG-38280205,Office Supplies,2025-03-19,Yes,EMP077
+VEN072,Rai-Narayan,contact@rainarayan.com,+91-99006-66952,"92, Nagi Road, Nangloi Jat-265479",191485807836,REG-23746101,Printing & Packaging,2025-03-22,Yes,EMP086
+VEN073,"Korpal, Merchant and Tara",contact@korpalmerchantandt.com,+91-65536-77860,"H.No. 146, Saini Street, Hajipur-806578",970629620153,REG-35499255,Logistics,2025-03-24,Yes,EMP009
+VEN074,Tara PLC,contact@taraplc.com,+91-97007-67538,"H.No. 70, Ramaswamy Zila, New Delhi-950047",516122753046,REG-41611127,Software Licensing,2025-03-29,No,EMP098
+VEN075,"Sachdeva, Prashad and Seth",contact@sachdevaprashadand.com,+91-62684-65065,"84, Sha Path, Khammam 175186",588425241056,REG-46504617,IT Hardware,2025-03-29,Yes,EMP022
+VEN076,Hans and Sons,contact@hansandsons.com,+91-94481-27444,"H.No. 705, Mahal Ganj, Madhyamgram 103579",292712966667,REG-61447859,Catering,2025-03-31,No,EMP004
+VEN077,Salvi LLC,contact@salvillc.com,+91-73948-25156,"61, Deol Circle, Kochi-868230",984546156793,REG-40314047,IT Hardware,2025-04-02,No,EMP063
+VEN078,"Chandran, Agarwal and Kala",contact@chandranagarwaland.com,+91-91129-60960,"938, Andra Chowk, Tiruvottiyur-627136",445187053494,REG-93579731,Office Supplies,2025-04-02,No,EMP007
+VEN079,Chana-Krishna,contact@chanakrishna.com,+91-64146-01600,"11/175, Viswanathan Zila, Sasaram 686025",777809733977,REG-65049584,IT Hardware,2025-04-04,No,EMP031
+VEN080,Sampath PLC,contact@sampathplc.com,+91-64288-34116,"H.No. 42, Om Ganj, Nellore 221418",739473121727,REG-21783073,Logistics,2025-04-09,No,EMP099
+VEN081,"Gour, Kulkarni and Menon",girindra.chatterjee@sentinelcorp.com,+91-99060-83020,"74/654, Borah Street, Ghaziabad-650442",812282178192,REG-43160881,Office Supplies,2025-04-12,No,EMP031
+VEN082,Gulati-Sabharwal,contact@gulatisabharwal.com,+91-61998-93674,"266, Lall Ganj, Bhusawal-894484",367303718376,REG-51890609,Printing & Packaging,2025-04-15,Yes,EMP055
+VEN083,Lala-Dhillon,contact@laladhillon.com,+91-68466-64369,"H.No. 76, Wagle Path, Jalandhar-694544",274204956121,REG-36725847,Catering,2025-04-19,No,EMP092
+VEN084,Kota Ltd,contact@kotaltd.com,+91-81342-62071,"03/96, Ghose Path, Patiala-590599",146774186256,REG-59580252,IT Hardware,2025-04-23,Yes,EMP028
+VEN085,"Dyal, Desai and Vala",contact@dyaldesaiandvala.com,+91-81746-20287,"H.No. 242, Ravi Circle, Anantapuram 379772",694486959463,REG-65462544,Cleaning Services,2025-04-29,No,EMP059
+VEN086,"Mitter, Khurana and Krishnan",contact@mitterkhuranaandkr.com,+91-89778-70617,"17, Srinivas, Deoghar-805891",254494812604,REG-98032908,Printing & Packaging,2025-04-30,Yes,EMP053
+VEN087,Bora-Mannan,contact@boramannan.com,+91-97695-59591,"H.No. 397, Parikh Path, Noida 491357",005184498926,REG-97734815,Software Licensing,2025-04-30,No,EMP053
+VEN088,Mukhopadhyay Inc,contact@mukhopadhyayinc.com,+91-88720-41831,"01, Muni Circle, Gangtok 353344",714224109881,REG-37726346,Catering,2025-05-03,Yes,EMP045
+VEN089,"Rai, Chada and Merchant",contact@raichadaandmerchan.com,+91-69459-13336,"H.No. 426, Ramachandran Street, Karimnagar-104754",825537147859,REG-62162278,Office Supplies,2025-05-08,Yes,EMP083
+VEN090,"Brar, Pal and Sathe",contact@brarpalandsathe.com,+91-78255-37914,"384, Magar Circle, Moradabad 308330",395995342836,REG-50332555,Printing & Packaging,2025-05-11,No,EMP007
+VEN091,Bhatti-Oak,contact@bhattioak.com,+91-61876-89353,"95, Keer Circle, Solapur-199758",131251293110,REG-11804855,Printing & Packaging,2025-05-12,No,EMP007
+VEN092,"Verma, Mangat and Bhandari",contact@vermamangatandbhan.com,+91-86757-46281,"03, Mangal Circle, Visakhapatnam-920530",880434165182,REG-73962190,Cleaning Services,2025-05-14,No,EMP092
+VEN093,"Datta, Trivedi and Chauhan",contact@dattatrivediandcha.com,+91-93510-70678,"H.No. 81, Walia Road, Rewa-393827",909046376604,REG-60350701,IT Hardware,2025-05-14,No,EMP020
+VEN094,D’Alia-Setty,contact@daliasetty.com,+91-81376-76326,"21/020, Taneja Street, Nagaon 252410",941013721510,REG-71873691,Office Supplies,2025-05-16,Yes,EMP055
+VEN095,Mangal PLC,contact@mangalplc.com,+91-95873-66494,"H.No. 67, Solanki, Malegaon 629960",428241724825,REG-97836731,Cleaning Services,2025-05-16,No,EMP092
+VEN096,Chhabra and Sons,contact@chhabraandsons.com,+91-86767-29170,"94/99, Kashyap, Ahmednagar-517289",331279757366,REG-15613827,IT Hardware,2025-05-20,Yes,EMP004
+VEN097,Sarraf Ltd,contact@sarrafltd.com,+91-67449-49787,"50/41, Ganesh Nagar, Silchar-478366",539705487396,REG-22744478,Office Supplies,2025-05-24,No,EMP009
+VEN098,Savant-Kalla,contact@savantkalla.com,+91-74584-12193,"196, Sanghvi Path, Kolhapur 413899",038657191826,REG-20043577,Logistics,2025-06-01,Yes,EMP007
+VEN099,Mittal and Sons,contact@mittalandsons.com,+91-86288-99039,"H.No. 40, Gill Circle, Miryalaguda-056856",218501631599,REG-89941241,Software Licensing,2025-06-04,No,EMP055
+VEN100,Chaudry Inc,contact@chaudryinc.com,+91-78954-99677,"H.No. 26, Dhar Street, Bettiah 927532",320603850506,REG-51273379,Logistics,2025-06-06,Yes,EMP062
+VEN101,Upadhyay Inc,contact@upadhyayinc.com,+91-90999-11497,"075, Doctor Marg, Vadodara 353654",462638380657,REG-83083942,Cleaning Services,2025-06-09,Yes,EMP059
+VEN102,Nanda Group,contact@nandagroup.com,+91-94305-45688,"H.No. 19, Gole Ganj, Surendranagar Dudhrej 741672",171339596292,REG-37732020,Catering,2025-06-11,No,EMP007
+VEN103,Boase-Swamy,jai.kota@sentinelcorp.com,+91-88145-09837,"712, Sankar Circle, Srikakulam-741011",690618120546,REG-47692831,Office Supplies,2025-06-11,No,EMP082
+VEN104,Yadav PLC,contact@yadavplc.com,+91-84262-22789,"H.No. 418, Dugal Ganj, Katni-463031",067883171210,REG-18277097,Catering,2025-06-12,Yes,EMP007
+VEN105,Arya Ltd,contact@aryaltd.com,+91-74237-53429,"73/59, Hegde Circle, Durg 212281",676650618091,REG-88598977,Software Licensing,2025-06-15,Yes,EMP093
+VEN106,Dugar LLC,contact@dugarllc.com,+91-64641-78419,"51, Srinivas Chowk, Bhagalpur 603029",864300981806,REG-97851693,Logistics,2025-06-18,No,EMP099
+VEN107,Sarraf Inc,contact@sarrafinc.com,+91-91099-11957,"26/217, Nigam Road, Jodhpur-865780",116152809885,REG-99927658,Catering,2025-06-19,No,EMP082
+VEN108,Ben-Dyal,contact@bendyal.com,+91-87254-49424,"H.No. 279, Chakrabarti Marg, Firozabad-519066",973577907141,REG-61361533,Software Licensing,2025-06-21,No,EMP070
+VEN109,"Vasa, Sharma and Mutti",contact@vasasharmaandmutti.com,+91-85638-02599,"36/915, Lad Path, Motihari 347955",615939982455,REG-78510704,Catering,2025-06-24,Yes,EMP066
+VEN110,Guha Group,contact@guhagroup.com,+91-89244-08079,"01, Kaul Nagar, Jaipur 059325",211586938068,REG-66187845,Logistics,2025-06-27,Yes,EMP040
+VEN111,Rao-Srinivas,contact@raosrinivas.com,+91-89143-39124,"12/51, Shukla Chowk, Warangal-268018",344375758441,REG-86970753,Software Licensing,2025-06-28,Yes,EMP040
+VEN112,"Agarwal, Bava and Raju",contact@agarwalbavaandraju.com,+91-90613-22570,"676, Prashad Path, Nangloi Jat-271040",462996065307,REG-46048781,Logistics,2025-06-28,No,EMP070
+VEN113,Soman Group,contact@somangroup.com,+91-75039-77993,"48/734, Brahmbhatt Chowk, Noida 558122",947174648877,REG-20796722,Printing & Packaging,2025-06-30,Yes,EMP007
+VEN114,Kakar LLC,contact@kakarllc.com,+91-94835-97853,"281, Agate Street, Hospet 403447",517123685160,REG-45495029,Printing & Packaging,2025-07-07,Yes,EMP099
+VEN115,"Dutta, Narayanan and Sandhu",contact@duttanarayananands.com,+91-66092-87098,"22, Randhawa Marg, Srikakulam-796603",206436110371,REG-27810664,IT Hardware,2025-07-08,No,EMP042
+VEN116,Sachdev LLC,contact@sachdevllc.com,+91-76999-72856,"20/826, Sood Chowk, Tumkur-401938",705685662462,REG-82199509,IT Hardware,2025-07-09,No,EMP070
+VEN117,Kanda-Mander,ekbal.garg@sentinelcorp.com,+91-77308-86489,"H.No. 091, Kalla Nagar, Jamshedpur 926921",858471296180,REG-41171838,Cleaning Services,2025-07-11,No,EMP009
+VEN118,Konda PLC,contact@kondaplc.com,+91-69977-86223,"219, Khosla Marg, Ballia-374740",402445502296,REG-19339597,Software Licensing,2025-07-13,Yes,EMP059
+VEN119,"Naidu, D’Alia and Pandey",contact@naidudaliaandpande.com,+91-88426-66680,"84/608, Bakshi Zila, Ulhasnagar-034244",770435811288,REG-10983894,IT Hardware,2025-07-17,No,EMP093
+VEN120,"Gandhi, Varkey and Dey",contact@gandhivarkeyanddey.com,+91-97891-22356,"992, Parmer Chowk, Muzaffarnagar-314530",369292984257,REG-90065352,IT Hardware,2025-07-18,Yes,EMP071
+VEN121,Dalal-Khalsa,contact@dalalkhalsa.com,+91-96939-91987,"96/292, Jhaveri Ganj, Jehanabad-849825",618892414183,REG-30854365,Cleaning Services,2025-07-21,No,EMP089
+VEN122,Patla-Ramanathan,contact@patlaramanathan.com,+91-60058-43719,"H.No. 77, Bhattacharyya Nagar, Gorakhpur-772459",541597099625,REG-43918937,IT Hardware,2025-07-21,No,EMP045
+VEN123,"Mandal, Chaudhry and Hari",contact@mandalchaudhryandh.com,+91-95661-77014,"H.No. 24, Walla Nagar, Panipat 084271",464743671369,REG-58178682,Cleaning Services,2025-07-22,No,EMP009
+VEN124,Bhasin and Sons,contact@bhasinandsons.com,+91-69406-30437,"73, Dhawan Path, Imphal-625881",802620672400,REG-50049524,Catering,2025-07-22,Yes,EMP007
+VEN125,Nigam PLC,contact@nigamplc.com,+91-72913-66046,"37/562, Bhagat Circle, Sangli-Miraj & Kupwad 721753",851587996846,REG-11714029,Cleaning Services,2025-07-25,Yes,EMP082
+VEN126,Chandra-Verma,contact@chandraverma.com,+91-78906-45569,"45, Basak Street, Nizamabad-435031",574982182744,REG-82693120,Software Licensing,2025-07-29,No,EMP031
+VEN127,Borah-Raju,contact@borahraju.com,+91-77834-20078,"91/21, Prakash Marg, Proddatur-239868",795687833918,REG-69961498,Catering,2025-07-30,No,EMP040
+VEN128,Parmar-Bora,contact@parmarbora.com,+91-80182-72551,"818, Sagar Street, Tiruchirappalli 335554",821009968814,REG-38192821,Cleaning Services,2025-07-30,Yes,EMP082
+VEN129,Ranganathan-Nanda,contact@ranganathannanda.com,+91-70930-78647,"H.No. 998, Chowdhury Marg, Jalgaon 999119",652074466609,REG-86778235,Office Supplies,2025-08-02,Yes,EMP089
+VEN130,Tara-Ahluwalia,contact@taraahluwalia.com,+91-66831-23363,"977, Sathe Marg, Ghaziabad-384983",249998279501,REG-50170625,Catering,2025-08-02,No,EMP007
+VEN131,Bali-Dube,contact@balidube.com,+91-81795-54596,"H.No. 71, Devan, Sikar-431027",940974993097,REG-32885741,Logistics,2025-08-03,No,EMP053
+VEN132,Pandey-Shankar,contact@pandeyshankar.com,+91-72340-08966,"91/25, Khare Zila, Bhiwandi-528669",890927532697,REG-39158087,Office Supplies,2025-08-03,Yes,EMP093
+VEN133,Misra Group,contact@misragroup.com,+91-61531-53120,"375, Majumdar Street, Gorakhpur-690331",668700217659,REG-22799248,Cleaning Services,2025-08-04,No,EMP009
+VEN134,Cherian and Sons,contact@cherianandsons.com,+91-97982-85089,"H.No. 61, Parmar Circle, Bidhannagar-741124",528953926442,REG-33851602,Catering,2025-08-06,Yes,EMP028
+VEN135,Sengupta LLC,contact@senguptallc.com,+91-61658-95049,"08, Goyal Marg, Udupi 935186",386338392886,REG-24161873,IT Hardware,2025-08-08,No,EMP063
+VEN136,Sarna PLC,contact@sarnaplc.com,+91-76921-38590,"36, Barman Marg, Satara-999880",908277181298,REG-28160554,Printing & Packaging,2025-08-08,No,EMP061
+VEN137,Badal-Ramachandran,contact@badalramachandran.com,+91-64597-18350,"91/901, Thakkar Path, Ramagundam 914766",834110809969,REG-38556255,Logistics,2025-08-09,No,EMP028
+VEN138,Andra Group,contact@andragroup.com,+91-84764-59759,"03/49, Maharaj Road, Gandhinagar-743748",898562575326,REG-12566878,Office Supplies,2025-08-10,Yes,EMP007
+VEN139,"Zacharia, Muni and Bera",contact@zachariamuniandber.com,+91-75486-64117,"78, Narula Chowk, Nagercoil 420949",155868639561,REG-40308351,Cleaning Services,2025-08-16,No,EMP099
+VEN140,Chadha LLC,contact@chadhallc.com,+91-82994-97800,"66/938, Biswas Nagar, Jamalpur-895543",373334333395,REG-30937370,Catering,2025-08-18,Yes,EMP070
+VEN141,Wali Ltd,contact@waliltd.com,+91-68276-20889,"78/29, Dave Street, Munger 866934",688615335554,REG-39319229,Software Licensing,2025-08-22,Yes,EMP028
+VEN142,"Nagar, Sastry and Dalal",contact@nagarsastryanddala.com,+91-89405-32089,"410, Varkey, Tiruppur 854249",214958702070,REG-24217270,Catering,2025-08-23,Yes,EMP083
+VEN143,"Vyas, Barad and Nayar",contact@vyasbaradandnayar.com,+91-84914-20644,"229, Sarma Street, Bulandshahr-379473",258313237058,REG-86809773,Cleaning Services,2025-08-24,Yes,EMP009
+VEN144,Goyal and Sons,contact@goyalandsons.com,+91-67001-72151,"H.No. 209, Misra, Chandigarh 162249",147214586833,REG-92148463,Catering,2025-08-27,No,EMP093
+VEN145,"Lall, Kothari and Mani",contact@lallkothariandmani.com,+91-78987-34452,"51/827, Pandya Path, Chapra 237333",347955276365,REG-58999937,Catering,2025-08-30,No,EMP042
+VEN146,Palan Ltd,contact@palanltd.com,+91-79519-70956,"43/840, Ram Road, Miryalaguda 325621",324826292518,REG-81532887,Logistics,2025-09-03,No,EMP031
+VEN147,Basak-Pandit,contact@basakpandit.com,+91-79932-67568,"01/658, Balasubramanian Street, Narasaraopet-021355",259526949588,REG-81449442,Printing & Packaging,2025-09-07,Yes,EMP061
+VEN148,"Taneja, Venkatesh and Tank",contact@tanejavenkateshand.com,+91-70185-83967,"34/30, Bajwa Zila, Kochi-966055",344144885015,REG-55816776,Catering,2025-09-07,No,EMP077
+VEN149,Khurana-Shukla,contact@khuranashukla.com,+91-92198-66088,"32, Bedi Zila, Yamunanagar 325953",743152742054,REG-86206305,Catering,2025-09-09,Yes,EMP077
+VEN150,"Krishna, Sehgal and Bahl",vansha.thakkar@sentinelcorp.com,+91-84444-37872,"00/642, Raman Path, Kottayam-766183",983553935435,REG-79480727,Cleaning Services,2025-09-15,No,EMP009
+VEN151,Hans Group,contact@hansgroup.com,+91-85764-92124,"H.No. 458, Yadav Marg, Bhopal 429401",744431351823,REG-39042654,Logistics,2025-09-18,No,EMP066
+VEN152,Suresh-Lanka,contact@sureshlanka.com,+91-64670-03597,"565, Sehgal Street, Firozabad 743490",602933334680,REG-11194267,Office Supplies,2025-09-18,No,EMP042
+VEN153,Wali Group,contact@waligroup.com,+91-72637-24116,"57/399, Baral Ganj, Eluru 648408",394312908781,REG-49010740,Office Supplies,2025-09-18,Yes,EMP077
+VEN154,Subramanian-Gola,contact@subramaniangola.com,+91-77450-52947,"H.No. 49, Rao Path, Kochi 721386",904268181845,REG-25704681,Printing & Packaging,2025-09-21,Yes,EMP071
+VEN155,"Bhatia, Devi and Venkataraman",contact@bhatiadeviandvenka.com,+91-98664-16691,"78/652, Walia Chowk, Bongaigaon-497334",300478686337,REG-56460773,IT Hardware,2025-09-22,Yes,EMP066
+VEN156,"Gera, Baral and Kota",contact@gerabaralandkota.com,+91-61229-87973,"89/25, Mandal Path, Alappuzha-905151",658202970213,REG-96592295,Software Licensing,2025-09-27,No,EMP042
+VEN157,Nigam-Contractor,contact@nigamcontractor.com,+91-67147-02456,"368, Chana Path, Kanpur-817549",715969664160,REG-53589647,IT Hardware,2025-09-28,Yes,EMP086
+VEN158,Dhingra Inc,contact@dhingrainc.com,+91-62061-63942,"H.No. 872, Krishna Ganj, Ahmedabad 367303",358573065240,REG-75136149,Cleaning Services,2025-09-30,Yes,EMP066
+VEN159,"Naidu, Mutti and Dora",contact@naidumuttianddora.com,+91-84476-16315,"74, Bhalla Road, Guna-477005",566765277584,REG-21087928,Printing & Packaging,2025-10-01,No,EMP094
+VEN160,Padmanabhan LLC,contact@padmanabhanllc.com,+91-77914-63979,"89, Ganesh Road, Ranchi-478985",167014508993,REG-99904987,Software Licensing,2025-10-03,Yes,EMP082
+VEN161,Parsa-Keer,contact@parsakeer.com,+91-67692-99828,"42, Thakkar Marg, Kochi 593327",535560932048,REG-88387434,Software Licensing,2025-10-04,No,EMP061
+VEN162,Iyer LLC,contact@iyerllc.com,+91-61556-99379,"521, Natarajan Chowk, Satara-074329",002255794155,REG-34544318,Printing & Packaging,2025-10-04,No,EMP059
+VEN163,"Suresh, Krishnamurthy and Behl",contact@sureshkrishnamurth.com,+91-77135-23086,"H.No. 00, De Path, Nanded 868011",849877694531,REG-47437115,Cleaning Services,2025-10-06,No,EMP061
+VEN164,"Bahl, Sinha and Bath",faqid.savant@sentinelcorp.com,+91-97154-68673,"H.No. 204, Shan Zila, Gudivada-117993",550789679352,REG-20382674,Office Supplies,2025-10-06,No,EMP092
+VEN165,Shan-Acharya,contact@shanacharya.com,+91-69058-93588,"24/241, Krishna Path, Serampore-064361",635365419518,REG-17069536,Logistics,2025-10-08,No,EMP028
+VEN166,"Raju, Mander and Krishnan",contact@rajumanderandkrish.com,+91-69913-20111,"H.No. 925, Ramanathan Road, Hindupur-486528",755719285654,REG-43502308,Catering,2025-10-11,Yes,EMP070
+VEN167,Saraf LLC,contact@sarafllc.com,+91-93039-02453,"H.No. 91, Kibe Marg, Kalyan-Dombivli 925132",959351863878,REG-30687181,Logistics,2025-10-11,Yes,EMP077
+VEN168,Patla-Sethi,contact@patlasethi.com,+91-73170-38558,"30/554, Vig Circle, Aligarh 272614",721228160648,REG-45465638,Printing & Packaging,2025-10-12,No,EMP086
+VEN169,Kaur LLC,contact@kaurllc.com,+91-96086-14201,"H.No. 832, Dhar Road, Allahabad-499471",370985931746,REG-25659979,Cleaning Services,2025-10-13,No,EMP042
+VEN170,Thaman Group,contact@thamangroup.com,+91-70844-35187,"H.No. 527, Grewal Road, Naihati 932966",699013983735,REG-50693207,IT Hardware,2025-10-15,No,EMP093
+VEN171,Balay PLC,contact@balayplc.com,+91-89968-31551,"99/40, Kant Path, Ahmedabad-717058",983684577600,REG-48182550,Logistics,2025-10-16,No,EMP059
+VEN172,Lal-Cheema,contact@lalcheema.com,+91-85094-36745,"621, Chander Circle, Hindupur 062962",713247546913,REG-69286198,IT Hardware,2025-10-17,Yes,EMP092
+VEN173,Narasimhan-Mohan,contact@narasimhanmohan.com,+91-68465-32975,"H.No. 62, Munshi Nagar, Korba-452577",638655779082,REG-69042204,Catering,2025-10-23,No,EMP098
+VEN174,"Jhaveri, Vasa and Patel",contact@jhaverivasaandpate.com,+91-78564-66107,"00, Chauhan Path, Firozabad-665918",629127990881,REG-22507745,Logistics,2025-10-23,Yes,EMP004
+VEN175,Jani-Narayanan,contact@janinarayanan.com,+91-95188-47277,"H.No. 18, Behl Ganj, Burhanpur 139837",110475412126,REG-70242778,Cleaning Services,2025-10-25,No,EMP022
+VEN176,Prakash-Gour,contact@prakashgour.com,+91-68530-14328,"22, Kara Ganj, Alappuzha-463331",770388608680,REG-35481281,Cleaning Services,2025-10-25,Yes,EMP071
+VEN177,"Sharaf, Dua and Saran",contact@sharafduaandsaran.com,+91-78115-04852,"87/76, Loyal, Sambalpur-473799",289517187026,REG-97883261,Logistics,2025-10-26,No,EMP092
+VEN178,Mall-Bedi,contact@mallbedi.com,+91-74374-98328,"31, Sawhney Chowk, Hubli–Dharwad-751701",244204380571,REG-92692727,Office Supplies,2025-10-26,Yes,EMP007
+VEN179,Kara-Sanghvi,contact@karasanghvi.com,+91-79906-18140,"H.No. 244, Panchal Path, Bokaro 961201",407581814124,REG-70306604,Software Licensing,2025-10-27,No,EMP028
+VEN180,Murty Inc,contact@murtyinc.com,+91-88846-74044,"H.No. 075, Devi Street, Ambarnath 344196",258320679981,REG-39807828,IT Hardware,2025-10-27,Yes,EMP007
+VEN181,Butala-Samra,contact@butalasamra.com,+91-81946-16864,"28/45, Buch Zila, Sagar 796275",165585239868,REG-15402922,Software Licensing,2025-10-31,Yes,EMP066
+VEN182,Pathak-Chakrabarti,contact@pathakchakrabarti.com,+91-81106-45193,"696, Brar Circle, Tirupati-352181",319520585277,REG-94790150,Catering,2025-11-01,Yes,EMP004
+VEN183,Choudhry-Mody,contact@choudhrymody.com,+91-81767-02500,"H.No. 538, Jani Ganj, Motihari-920698",463681579812,REG-36692577,Cleaning Services,2025-11-02,Yes,EMP094
+VEN184,"Nair, Raj and Wali",contact@nairrajandwali.com,+91-89157-49372,"96/11, Kale Circle, Bidhannagar 657661",528168505423,REG-55866538,Office Supplies,2025-11-06,No,EMP009
+VEN185,"Chopra, Seth and Shan",contact@choprasethandshan.com,+91-77433-77373,"86/08, Varty Marg, Jhansi 764472",371452111751,REG-80305568,Logistics,2025-11-07,Yes,EMP004
+VEN186,"Kalla, Brahmbhatt and Nair",contact@kallabrahmbhattand.com,+91-99362-97689,"91, Mital, Gangtok-105566",086416862278,REG-36589676,Office Supplies,2025-11-08,Yes,EMP009
+VEN187,"Baral, More and Sastry",contact@baralmoreandsastry.com,+91-83460-17987,"21/456, Iyer Street, Panvel 884247",445107622683,REG-77144075,Software Licensing,2025-11-09,Yes,EMP031
+VEN188,Modi and Sons,contact@modiandsons.com,+91-74758-05513,"35/841, Hegde Road, Cuttack-981829",415747338484,REG-28424464,Printing & Packaging,2025-11-09,Yes,EMP089
+VEN189,"Kala, Apte and Jaggi",contact@kalaapteandjaggi.com,+91-73178-43321,"H.No. 448, Naik Circle, Raipur 569902",577027278576,REG-17519183,Cleaning Services,2025-11-10,No,EMP004
+VEN190,Dixit-Mital,contact@dixitmital.com,+91-87381-64304,"73/34, Sheth Street, Kishanganj-688263",358662961943,REG-19865900,Printing & Packaging,2025-11-11,Yes,EMP077
+VEN191,"Varughese, Din and Dara",contact@varughesedinanddar.com,+91-89198-84848,"332, Sampath Nagar, Raebareli-294511",994417154544,REG-98062882,Software Licensing,2025-11-11,Yes,EMP063
+VEN192,Jhaveri-Karnik,contact@jhaverikarnik.com,+91-79435-89916,"52/11, Tailor Zila, Hosur-759579",314386632270,REG-33703827,Catering,2025-11-15,Yes,EMP070
+VEN193,Mistry Ltd,ekavir.bhargava@sentinelcorp.com,+91-72967-16110,"57/173, Banik Street, Nagpur-761847",500141884216,REG-37500238,IT Hardware,2025-11-17,No,EMP055
+VEN194,"Gandhi, Sibal and Datta",contact@gandhisibalanddatt.com,+91-96770-07104,"90/16, Shenoy Street, Dhanbad 653755",385977034824,REG-68802946,Printing & Packaging,2025-11-18,No,EMP004
+VEN195,Chaudhuri LLC,contact@chaudhurillc.com,+91-80920-67537,"88, Manda Road, Patiala-069872",214862890233,REG-17734634,Cleaning Services,2025-11-21,Yes,EMP063
+VEN196,Bhatia-Pingle,contact@bhatiapingle.com,+91-77749-53354,"85/140, Sankaran Ganj, Ratlam 666832",757574758339,REG-32891228,Catering,2025-11-23,No,EMP021
+VEN197,"Kashyap, Shan and Minhas",contact@kashyapshanandminh.com,+91-71978-51497,"H.No. 120, Parsa Road, Purnia 100225",373516091779,REG-77672253,IT Hardware,2025-11-24,Yes,EMP031
+VEN198,Chand-Nigam,contact@chandnigam.com,+91-60717-17009,"H.No. 28, Dass Zila, Muzaffarpur 857306",203173109678,REG-93747900,Cleaning Services,2025-11-24,Yes,EMP012
+VEN199,Kala-Bansal,contact@kalabansal.com,+91-72207-82515,"25/639, Desai Road, Orai 658039",809202428699,REG-95580271,IT Hardware,2025-11-25,Yes,EMP022
+VEN200,Basak Group,contact@basakgroup.com,+91-91661-62847,"66/70, Sandhu Marg, Raichur 244720",932710405411,REG-55876720,Logistics,2025-11-28,No,EMP053
+VEN201,Bose-Chana,contact@bosechana.com,+91-78937-38504,"80/79, Nagy Ganj, Orai-071518",511544796275,REG-70012727,IT Hardware,2025-12-09,Yes,EMP093
+VEN202,Garg Inc,contact@garginc.com,+91-95826-40952,"70/20, Bedi Chowk, Yamunanagar 166299",538179217174,REG-96492401,Logistics,2025-12-11,Yes,EMP071
+VEN203,Rajagopalan Ltd,bhavika.sampath@sentinelcorp.com,+91-96143-32195,"85/54, Bhakta Marg, Ambarnath-174328",674978524914,REG-26700614,Office Supplies,2025-12-12,No,EMP093
+VEN204,Rajagopal Ltd,contact@rajagopalltd.com,+91-61496-30005,"H.No. 665, Shukla Circle, Ghaziabad-669096",990490278742,REG-88561612,Cleaning Services,2025-12-17,Yes,EMP042
+VEN205,"Mane, Bala and Mitra",contact@manebalaandmitra.com,+91-84276-41288,"64/037, Chowdhury Marg, Panchkula-805526",655743132912,REG-24181143,Cleaning Services,2025-12-20,No,EMP040
+VEN206,"Doctor, Gaba and Dhillon",contact@doctorgabaanddhill.com,+91-78967-36452,"44, Mani Chowk, Kochi-309407",983022050209,REG-90971604,IT Hardware,2025-12-27,No,EMP004
+VEN207,"Mukherjee, Kar and Issac",contact@mukherjeekarandiss.com,+91-89316-81399,"H.No. 379, Shah Zila, Ramgarh-676320",091334123281,REG-31009452,Catering,2025-12-28,No,EMP059
+VEN208,Raval Ltd,contact@ravalltd.com,+91-92508-26934,"07/446, Rama Marg, Ballia 538758",046184992618,REG-92906016,Logistics,2025-12-29,Yes,EMP042
+VEN209,"Upadhyay, Walia and Suri",contact@upadhyaywaliaandsu.com,+91-97484-73912,"H.No. 551, Morar Marg, Kavali 499309",087406403910,REG-66867700,Printing & Packaging,2025-12-31,Yes,EMP022
+VEN210,"Singhal, Mangal and Yadav",contact@singhalmangalandya.com,+91-89543-94749,"24, Rau Path, Ranchi 098358",904530174268,REG-51738753,Printing & Packaging,2026-01-01,Yes,EMP049
+VEN211,Tara Group,contact@taragroup.com,+91-92373-21964,"55/647, Deep Street, Salem-386632",569961125355,REG-97645934,IT Hardware,2026-01-01,Yes,EMP045
+VEN212,"Dixit, Banik and Pingle",contact@dixitbanikandpingl.com,+91-95511-03761,"045, Parmar Nagar, Kulti-586923",752735454948,REG-11362459,Office Supplies,2026-01-05,No,EMP070
+VEN213,Kohli-Dass,contact@kohlidass.com,+91-81257-84497,"39/33, Divan Path, Bally-284210",199867980793,REG-53154591,IT Hardware,2026-01-06,Yes,EMP093
+VEN214,"Choudhury, Ghosh and Dora",contact@choudhuryghoshandd.com,+91-99721-05488,"437, Wable Street, Tiruvottiyur-292766",707550476816,REG-88802545,Logistics,2026-01-06,No,EMP031
+VEN215,Wason-Babu,contact@wasonbabu.com,+91-96809-63471,"H.No. 60, Pandit, Aurangabad-218518",735925556258,REG-85383550,IT Hardware,2026-01-08,No,EMP028
+VEN216,Bhat-Solanki,contact@bhatsolanki.com,+91-94962-27426,"49/047, Date Zila, Alwar-294440",813000413211,REG-44015322,Office Supplies,2026-01-08,No,EMP083
+VEN217,Tandon-Mani,contact@tandonmani.com,+91-60828-43713,"15, Naik Road, Sambhal-876038",329318393352,REG-89991301,IT Hardware,2026-01-09,No,EMP077
+VEN218,Dewan-Guha,contact@dewanguha.com,+91-60058-43719,"24, Desai Street, Madurai-276212",062292310672,REG-46358251,Logistics,2026-01-10,No,EMP045
+VEN219,Subramanian PLC,contact@subramanianplc.com,+91-60067-40760,"H.No. 78, Narang Road, Navi Mumbai-307681",091570184094,REG-95745109,Logistics,2026-01-14,No,EMP063
+VEN220,"Sagar, Cherian and Parmar",contact@sagarcherianandpar.com,+91-89538-32749,"H.No. 228, Thaman Marg, Sangli-Miraj & Kupwad-558556",344196931572,REG-75535348,Catering,2026-01-15,Yes,EMP042
+VEN221,"Barad, Gill and Sahni",contact@baradgillandsahni.com,+91-77586-07552,"72, Barad Road, Bihar Sharif-547887",866882634351,REG-70369365,Office Supplies,2026-01-28,No,EMP045
+VEN222,"Rout, Merchant and Dyal",contact@routmerchantanddya.com,+91-91868-12771,"753, Arya Nagar, Bhubaneswar 218114",305548851027,REG-28850770,Cleaning Services,2026-01-28,No,EMP083
+VEN223,Chatterjee Inc,contact@chatterjeeinc.com,+91-63666-33081,"38/06, Sahota Circle, Chapra 741608",944665743748,REG-93698993,Office Supplies,2026-01-29,No,EMP071
+VEN224,"Goel, Naik and Bhargava",contact@goelnaikandbhargav.com,+91-81293-51747,"21/85, Prakash Zila, Dharmavaram 545226",089899217223,REG-35867257,Software Licensing,2026-01-30,No,EMP062
+VEN225,"Trivedi, Deshpande and Boase",contact@trivedideshpandean.com,+91-68032-93375,"H.No. 84, Mandal Nagar, Dharmavaram 278755",711592124998,REG-53645651,Printing & Packaging,2026-02-03,Yes,EMP082
+VEN226,"Krishnan, Pandya and Loke",contact@krishnanpandyaandl.com,+91-98907-04818,"H.No. 67, Kohli, Dewas-016668",589113529096,REG-54506155,Software Licensing,2026-02-03,Yes,EMP063
+VEN227,Date Group,contact@dategroup.com,+91-76284-24983,"45, Contractor Street, Bijapur 904966",982146584044,REG-88777447,Logistics,2026-02-07,Yes,EMP066
+VEN228,"Saraf, Pai and Murthy",contact@sarafpaiandmurthy.com,+91-81647-25443,"93, Basu Road, Mumbai-561595",435240824008,REG-49209916,Catering,2026-02-08,No,EMP089
+VEN229,Mall-Sama,contact@mallsama.com,+91-72594-40730,"08, Palla Nagar, Coimbatore 033092",808613171274,REG-78299645,IT Hardware,2026-02-09,Yes,EMP077
+VEN230,Sane-Munshi,contact@sanemunshi.com,+91-71264-38770,"711, Chander Zila, Jalandhar 280988",188805929622,REG-34272734,Office Supplies,2026-02-10,Yes,EMP022
+VEN231,Yadav and Sons,contact@yadavandsons.com,+91-68584-04433,"71/39, Chand Chowk, Pimpri-Chinchwad-286790",100623120387,REG-60090149,Office Supplies,2026-02-13,No,EMP066
+VEN232,"Issac, Borra and Kibe",contact@issacborraandkibe.com,+91-95654-43573,"91/905, Sangha Circle, Coimbatore 067165",886753396360,REG-52704903,Printing & Packaging,2026-02-14,Yes,EMP066
+VEN233,Ahuja-Pandey,contact@ahujapandey.com,+91-85260-87835,"88, Kannan, Muzaffarnagar 670656",125674680715,REG-43876400,IT Hardware,2026-02-16,Yes,EMP059
+VEN234,Kumer-Warrior,contact@kumerwarrior.com,+91-68305-29190,"10/016, Rai Chowk, Motihari 723046",866317797177,REG-52421060,Catering,2026-02-16,Yes,EMP042
+VEN235,"Sahni, Merchant and Dua",contact@sahnimerchantanddu.com,+91-62219-39932,"693, Nazareth Chowk, Unnao-725228",065965756924,REG-53038948,Software Licensing,2026-02-20,No,EMP061
+VEN236,"Sachdev, Vohra and Kadakia",contact@sachdevvohraandkad.com,+91-92947-79876,"H.No. 981, Mani Chowk, Narasaraopet-489952",343010713966,REG-16105858,Software Licensing,2026-02-21,No,EMP062
+VEN237,"Mannan, Mital and Dugar",contact@mannanmitalandduga.com,+91-62262-67984,"31/32, Tak Ganj, Karimnagar-782911",385786527858,REG-57551594,Printing & Packaging,2026-02-26,No,EMP062
+VEN238,Wali-Manne,contact@walimanne.com,+91-91193-59692,"354, Modi, Hapur-909862",843645380442,REG-18677624,Software Licensing,2026-02-27,No,EMP070
+VEN239,"Peri, Bandi and Barad",contact@peribandiandbarad.com,+91-97385-98789,"H.No. 971, Vyas Street, Kirari Suleman Nagar-891371",820582958292,REG-37623724,Cleaning Services,2026-03-03,No,EMP049
+VEN240,"Saini, Doctor and Char",contact@sainidoctorandchar.com,+91-62633-51000,"90/88, Chander Zila, Bikaner-686508",012796114351,REG-91742470,Logistics,2026-03-05,No,EMP092
+VEN241,Menon-Bhagat,contact@menonbhagat.com,+91-90719-22398,"71/812, Deshmukh, Haridwar-702793",592222064474,REG-94081078,Software Licensing,2026-03-08,No,EMP055
+VEN242,"Wali, Kale and Puri",contact@walikaleandpuri.com,+91-77391-45820,"H.No. 25, Nair Road, Faridabad-290147",060685361530,REG-52773159,Office Supplies,2026-03-10,No,EMP009
+VEN243,"Nigam, Gill and Shetty",contact@nigamgillandshetty.com,+91-90379-11802,"170, Jaggi Road, Kollam-548687",687339500479,REG-97813295,Logistics,2026-03-12,Yes,EMP045
+VEN244,"Sagar, Shah and Sandal",contact@sagarshahandsandal.com,+91-98922-21482,"68/76, Kara Path, Khandwa-973846",558825562965,REG-72744663,Logistics,2026-03-12,No,EMP071
+VEN245,Goel Group,contact@goelgroup.com,+91-98004-72768,"56/342, Raja Zila, Nandyal 375433",377701436349,REG-59529086,Office Supplies,2026-03-14,Yes,EMP086
+VEN246,Swaminathan-Goswami,contact@swaminathangoswami.com,+91-94915-32895,"920, Sampath Circle, Panvel 856271",890612034717,REG-54916840,Software Licensing,2026-03-14,No,EMP092
+VEN247,Rajagopalan PLC,contact@rajagopalanplc.com,+91-94842-84694,"76/772, Balasubramanian Zila, Jalna-438427",037613791805,REG-52476240,Software Licensing,2026-03-15,No,EMP086
+VEN248,Narayanan LLC,contact@narayananllc.com,+91-89096-70239,"H.No. 272, Yadav Chowk, Surendranagar Dudhrej-084958",039551240568,REG-32276047,Catering,2026-03-18,No,EMP082
+VEN249,Desai-Oommen,contact@desaioommen.com,+91-94072-63167,"260, Kapur Ganj, Rajpur Sonarpur-982150",562890028772,REG-20048242,Cleaning Services,2026-03-20,No,EMP012
+VEN250,"Ram, Dalal and Lala",contact@ramdalalandlala.com,+91-92421-89224,"947, Das Ganj, Srinagar 271551",309130756263,REG-65079923,Cleaning Services,2026-03-21,No,EMP089
+VEN251,"Yohannan, Ghosh and Mane",contact@yohannanghoshandma.com,+91-85328-62410,"87/716, Mangat, Ulhasnagar 569961",784872829979,REG-68381674,Printing & Packaging,2026-03-24,Yes,EMP007
+VEN252,Bath Inc,contact@bathinc.com,+91-61011-71781,"87, Varma Street, Khammam-269495",839822587139,REG-75609379,Cleaning Services,2026-03-25,Yes,EMP099
+VEN253,Bandi Group,contact@bandigroup.com,+91-94441-06102,"06/738, Bhalla Ganj, Ambala 395995",148902503926,REG-20326375,IT Hardware,2026-03-25,Yes,EMP098
+VEN254,"Purohit, Shah and Nagy",contact@purohitshahandnagy.com,+91-91624-91983,"63/60, Solanki Path, Kharagpur-702895",183673657661,REG-51949529,Catering,2026-03-28,Yes,EMP071
+VEN255,Oza-Menon,contact@ozamenon.com,+91-61879-87679,"698, Murthy Road, Kollam-945228",573993056164,REG-82509424,Logistics,2026-03-28,No,EMP093
+VEN256,Modi-Kibe,contact@modikibe.com,+91-63594-75457,"73/83, Ahuja Street, Nagpur-850506",652239559059,REG-85645982,Printing & Packaging,2026-03-31,No,EMP086
+VEN257,Edwin LLC,contact@edwinllc.com,+91-71467-57915,"H.No. 44, Rana, Raiganj-987622",456424008254,REG-72974683,Catering,2026-03-31,No,EMP062
+VEN258,Dass Ltd,contact@dassltd.com,+91-94908-01197,"13/261, Bhatt Zila, Motihari-068114",649308536866,REG-43540489,IT Hardware,2026-04-01,No,EMP062
+VEN259,Bansal-Halder,contact@bansalhalder.com,+91-74333-95355,"H.No. 541, Sarkar Path, Gandhidham 527758",565060983584,REG-19869264,IT Hardware,2026-04-03,No,EMP059
+VEN260,"Master, Mann and Loke",contact@mastermannandloke.com,+91-65081-91576,"04, Deo Street, Ulhasnagar 367294",630316179904,REG-99399687,Catering,2026-04-03,Yes,EMP077
+VEN261,Padmanabhan-Thakkar,contact@padmanabhanthakkar.com,+91-71571-06505,"H.No. 20, Kanda Path, Parbhani 785932",698720506149,REG-74468586,Catering,2026-04-07,No,EMP045
+VEN262,Garde-Viswanathan,contact@gardeviswanathan.com,+91-90519-37629,"30/913, Sastry Nagar, Gurgaon-636897",622656766182,REG-97715861,IT Hardware,2026-04-08,No,EMP009
+VEN263,"Bajwa, Mody and Gara",contact@bajwamodyandgara.com,+91-66170-76415,"27/03, Prakash Ganj, Guwahati 039240",804204394070,REG-18938604,Logistics,2026-04-15,No,EMP022
+VEN264,Ahuja PLC,contact@ahujaplc.com,+91-77183-38185,"H.No. 848, Badal Road, Mangalore-182339",167243426617,REG-90253323,IT Hardware,2026-04-17,No,EMP061
+VEN265,"Khare, More and Singh",contact@kharemoreandsingh.com,+91-65067-52187,"97/746, Wable Circle, Nanded-924075",786691251778,REG-56239991,Office Supplies,2026-04-18,No,EMP009
+VEN266,Roy PLC,contact@royplc.com,+91-89160-72733,"84/25, Biswas Chowk, Burhanpur-210388",744956213721,REG-38784084,Printing & Packaging,2026-04-19,No,EMP028
+VEN267,Natarajan LLC,contact@natarajanllc.com,+91-61468-46388,"173, Jayaraman, Mathura 467854",819956046618,REG-42580349,Software Licensing,2026-04-24,No,EMP012
+VEN268,"Sehgal, Parekh and Muni",contact@sehgalparekhandmun.com,+91-83441-89399,"81/792, Sidhu Zila, Sirsa 773329",431271026767,REG-32878479,Software Licensing,2026-04-26,No,EMP049
+VEN269,Kumer and Sons,contact@kumerandsons.com,+91-85465-64216,"940, Anand Chowk, Munger 510463",620555438404,REG-61965156,Cleaning Services,2026-04-28,Yes,EMP040
+VEN270,Saran LLC,contact@saranllc.com,+91-96809-93079,"15, Koshy Road, Hindupur-712406",772190340438,REG-48744673,Software Licensing,2026-04-29,No,EMP059
+VEN271,Sachar-Banik,contact@sacharbanik.com,+91-93892-66967,"94/88, Shan Ganj, Bharatpur 375899",406665800439,REG-69467023,Printing & Packaging,2026-04-29,Yes,EMP077
+VEN272,Sawhney Group,contact@sawhneygroup.com,+91-85179-19786,"H.No. 585, Rao Nagar, Jhansi-713900",717744905814,REG-71974027,Printing & Packaging,2026-05-01,No,EMP082
+VEN273,Narayanan-Pandey,contact@narayananpandey.com,+91-71293-79887,"H.No. 43, Hans Zila, Jamshedpur-337498",693792374740,REG-72445234,Cleaning Services,2026-05-03,No,EMP028
+VEN274,Pradhan Inc,contact@pradhaninc.com,+91-70427-41795,"806, Shroff Zila, Bijapur 187053",930407859321,REG-43266810,Software Licensing,2026-05-03,Yes,EMP042
+VEN275,"Bahl, Joshi and Narula",contact@bahljoshiandnarula.com,+91-65050-92440,"405, Warrior Marg, Aurangabad 291450",504617357438,REG-50576475,Software Licensing,2026-05-08,Yes,EMP071
+VEN276,Parsa-Varghese,contact@parsavarghese.com,+91-72274-35247,"H.No. 753, Munshi Path, Ranchi-204899",447212646471,REG-58469365,Software Licensing,2026-05-09,Yes,EMP055
+VEN277,Karan Ltd,contact@karanltd.com,+91-73970-09390,"H.No. 480, Zacharia Path, Khammam 206799",465911665535,REG-56241350,Office Supplies,2026-05-09,No,EMP086
+VEN278,"Baria, Kale and Narang",contact@bariakaleandnarang.com,+91-62983-78956,"35/680, Lad Road, Ludhiana-788317",593917251355,REG-32533467,Logistics,2026-05-10,No,EMP089
+VEN279,Sanghvi-Magar,contact@sanghvimagar.com,+91-90483-50165,"91/778, Bhakta Path, Tezpur 524191",625324472099,REG-92809273,Logistics,2026-05-11,No,EMP055
+VEN280,Mane Group,contact@manegroup.com,+91-66484-35976,"H.No. 20, Sridhar Road, Amritsar-719022",090974395339,REG-43638559,Catering,2026-05-12,No,EMP045
+VEN281,Arora-Manne,contact@aroramanne.com,+91-79091-21871,"H.No. 839, Gara Circle, Gulbarga-444721",742257905072,REG-36189702,Logistics,2026-05-12,Yes,EMP062
+VEN282,Sanghvi and Sons,contact@sanghviandsons.com,+91-80908-65484,"H.No. 45, De Circle, Tiruvottiyur-017012",925241913800,REG-11649277,Cleaning Services,2026-05-14,Yes,EMP061
+VEN283,Sule-Kohli,contact@sulekohli.com,+91-97836-70879,"79/071, Bir Road, Muzaffarnagar 565880",085627187500,REG-38286706,Office Supplies,2026-05-14,Yes,EMP092
+VEN284,Viswanathan Ltd,contact@viswanathanltd.com,+91-91705-21864,"45/65, Char Zila, Varanasi-203173",286852897558,REG-53574336,Catering,2026-05-14,No,EMP083
+VEN285,"Sani, Naik and Khosla",contact@saninaikandkhosla.com,+91-80612-95786,"45/77, Acharya Marg, Anantapuram-824043",961055661390,REG-95078886,Printing & Packaging,2026-05-14,No,EMP071
+VEN286,Verma Group,contact@vermagroup.com,+91-80793-06021,"H.No. 775, Mital Zila, Raipur 512382",170127706324,REG-31337593,Office Supplies,2026-05-15,No,EMP062
+VEN287,Sha Ltd,contact@shaltd.com,+91-75404-30149,"87/833, Bumb, Dehri 191088",693785477725,REG-32718459,Cleaning Services,2026-05-17,Yes,EMP022
+VEN288,Sehgal LLC,contact@sehgalllc.com,+91-67511-83209,"98/250, Cheema Chowk, Vijayanagaram-125457",518636374545,REG-83458776,IT Hardware,2026-05-19,No,EMP094
+VEN289,"Dube, Garg and Nazareth",contact@dubegargandnazaret.com,+91-73814-06880,"H.No. 094, Saha Ganj, Mehsana 473647",165712082677,REG-97313825,Office Supplies,2026-05-24,Yes,EMP082
+VEN290,Mallick Ltd,contact@mallickltd.com,+91-60132-91173,"25/53, Comar Chowk, Unnao 969691",516271361115,REG-59333294,Office Supplies,2026-05-31,No,EMP061
+VEN291,"Chana, Kapadia and Sankaran",contact@chanakapadiaandsan.com,+91-75729-80769,"251, Bawa Chowk, Firozabad 686227",792703352110,REG-42621391,Cleaning Services,2026-06-01,Yes,EMP045
+VEN292,"Sagar, Pillay and Bhardwaj",contact@sagarpillayandbhar.com,+91-80107-39365,"14/138, Chaudhuri Zila, Katihar 338392",335048889921,REG-15064880,IT Hardware,2026-06-03,No,EMP098
+VEN293,"Kant, Bassi and Verma",contact@kantbassiandverma.com,+91-81079-43213,"00/766, Swaminathan Zila, Srinagar 592124",186449251925,REG-51638598,IT Hardware,2026-06-05,No,EMP077
+VEN294,Gour-Bhargava,contact@gourbhargava.com,+91-76524-41830,"00/623, Dora Zila, Bellary 509977",479356465193,REG-89487366,Cleaning Services,2026-06-10,Yes,EMP049
+VEN295,Puri-Kapoor,contact@purikapoor.com,+91-98553-55139,"H.No. 77, Ahuja, Gandhidham-318432",508637659916,REG-27969486,Software Licensing,2026-06-10,No,EMP098
+VEN296,"Doctor, Solanki and Andra",contact@doctorsolankiandan.com,+91-95950-98028,"28, Mutti Circle, Dewas-890612",987622023413,REG-32402343,Cleaning Services,2026-06-12,Yes,EMP098
+VEN297,Amble and Sons,contact@ambleandsons.com,+91-83893-39472,"445, Amble Zila, Chinsurah 268388",103697117980,REG-94819556,Software Licensing,2026-06-16,Yes,EMP089
+VEN298,"Subramanian, Sarma and Golla",contact@subramaniansarmaan.com,+91-95617-38557,"02/77, Sabharwal Zila, Ranchi-450899",722698485833,REG-38147161,Cleaning Services,2026-06-16,No,EMP042
+VEN299,Sani and Sons,contact@saniandsons.com,+91-65886-10417,"H.No. 881, Nadkarni Street, Ludhiana-664742",728975267722,REG-35938895,Office Supplies,2026-06-20,No,EMP040
+VEN300,Ramesh Inc,contact@rameshinc.com,+91-75301-07806,"23/445, Narain Marg, Bidhannagar 313291",029218515691,REG-55172462,Office Supplies,2026-06-21,No,EMP049
+VEN301,Mody and Sons,contact@modyandsons.com,+91-77310-20869,"82, Gour Street, Tadepalligudem 312908",299275037314,REG-59584751,Cleaning Services,2026-06-21,Yes,EMP063
+VEN302,"Luthra, Baria and Gill",contact@luthrabariaandgill.com,+91-66070-28477,"H.No. 29, Swamy Marg, Nandyal-655125",773515850643,REG-26395999,Logistics,2026-06-23,No,EMP042
+VEN303,Prabhu-Chokshi,contact@prabhuchokshi.com,+91-81443-57240,"H.No. 985, Kant, Madhyamgram-612004",136968164535,REG-32566390,Logistics,2026-06-25,No,EMP099
+VEN304,Kumer Ltd,contact@kumerltd.com,+91-91902-13308,"39/385, Munshi Street, Bangalore-061817",222990775608,REG-59430818,Office Supplies,2026-07-19,No,EMP094

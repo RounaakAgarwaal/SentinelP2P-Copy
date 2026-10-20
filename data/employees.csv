@@ -1,0 +1,101 @@
+employee_id,name,email,phone,department,role,join_date
+EMP001,Aryan Maharaj,aryan.maharaj@sentinelcorp.com,+91-83483-85909,Finance,Finance Manager,2023-10-20
+EMP002,Udant Dewan,udant.dewan@sentinelcorp.com,+91-74339-18301,Finance,Accountant,2022-05-21
+EMP003,Gagan Sami,gagan.sami@sentinelcorp.com,+91-99560-52350,Sales,Sales Executive,2023-01-12
+EMP004,Ayushman Chander,ayushman.chander@sentinelcorp.com,+91-78348-64686,Procurement,Procurement Manager,2021-07-06
+EMP005,Viraj Tiwari,viraj.tiwari@sentinelcorp.com,+91-72621-89192,Operations,Operations Executive,2023-05-15
+EMP006,Rushil Saini,rushil.saini@sentinelcorp.com,+91-99763-61348,Finance,Accountant,2023-12-20
+EMP007,Saumya Mall,saumya.mall@sentinelcorp.com,+91-61876-89353,Procurement,Procurement Manager,2024-01-05
+EMP008,Nathaniel Sami,nathaniel.sami@sentinelcorp.com,+91-64808-56985,Operations,Operations Executive,2021-11-20
+EMP009,Arunima Dugal,arunima.dugal@sentinelcorp.com,+91-78317-13947,Procurement,Procurement Intern,2024-07-04
+EMP010,Gayathri Chaudry,gayathri.chaudry@sentinelcorp.com,+91-72504-49009,IT,IT Manager,2021-11-27
+EMP011,Lajita Chatterjee,lajita.chatterjee@sentinelcorp.com,+91-88005-02552,Operations,Operations Executive,2021-08-18
+EMP012,Hemangini Lalla,hemangini.lalla@sentinelcorp.com,+91-70949-31571,Procurement,Procurement Intern,2024-03-07
+EMP013,Tripti Yadav,tripti.yadav@sentinelcorp.com,+91-91133-99693,Operations,Operations Executive,2023-12-27
+EMP014,Kritika Brar,kritika.brar@sentinelcorp.com,+91-99007-21643,Operations,Operations Executive,2022-06-27
+EMP015,Janaki Handa,janaki.handa@sentinelcorp.com,+91-78835-98994,Operations,Operations Executive,2022-02-16
+EMP016,Chakradev Kari,chakradev.kari@sentinelcorp.com,+91-87177-67839,Finance,Accountant,2023-07-14
+EMP017,Fariq Kaul,fariq.kaul@sentinelcorp.com,+91-71049-44313,Finance,Finance Manager,2021-02-13
+EMP018,Lajita Mall,lajita.mall@sentinelcorp.com,+91-70117-09305,Sales,Sales Executive,2024-07-16
+EMP019,Janya Gaba,janya.gaba@sentinelcorp.com,+91-60514-43309,IT,IT Manager,2021-05-26
+EMP020,Isha Kadakia,isha.kadakia@sentinelcorp.com,+91-93510-70678,Finance,Accountant,2021-09-28
+EMP021,Ekbal Garg,ekbal.garg@sentinelcorp.com,+91-77749-53354,Finance,Accountant,2022-01-25
+EMP022,Nihal Shere,nihal.shere@sentinelcorp.com,+91-95804-55519,Procurement,Procurement Manager,2023-04-22
+EMP023,Anamika Kanda,anamika.kanda@sentinelcorp.com,+91-60993-52772,Finance,Finance Executive,2022-11-26
+EMP024,Daksh Karnik,daksh.karnik@sentinelcorp.com,+91-73139-24931,Sales,Sales Executive,2024-01-04
+EMP025,Diya Rattan,diya.rattan@sentinelcorp.com,+91-74563-60637,IT,IT Support,2022-05-27
+EMP026,Dominic Kakar,dominic.kakar@sentinelcorp.com,+91-99016-12833,Finance,Finance Executive,2021-04-14
+EMP027,Simon Tata,simon.tata@sentinelcorp.com,+91-63872-21798,IT,IT Support,2023-04-13
+EMP028,Tara Dhar,tara.dhar@sentinelcorp.com,+91-90960-21579,Procurement,Procurement Officer,2023-02-16
+EMP029,Liam Koshy,liam.koshy@sentinelcorp.com,+91-94345-59638,IT,IT Manager,2022-08-08
+EMP030,Priya Rastogi,priya.rastogi@sentinelcorp.com,+91-73111-38890,Finance,Accountant,2022-03-22
+EMP031,Theodore Devi,theodore.devi@sentinelcorp.com,+91-80936-06572,Procurement,Procurement Officer,2024-04-11
+EMP032,Gavin Batta,gavin.batta@sentinelcorp.com,+91-68320-10500,Finance,Finance Executive,2022-01-16
+EMP033,Michael Dutta,michael.dutta@sentinelcorp.com,+91-63853-52923,Operations,Operations Manager,2021-09-03
+EMP034,Devansh Rajan,devansh.rajan@sentinelcorp.com,+91-61343-54948,Operations,Operations Executive,2024-09-08
+EMP035,Upadhriti Wadhwa,upadhriti.wadhwa@sentinelcorp.com,+91-83346-87782,Operations,Operations Executive,2022-10-06
+EMP036,Advay Contractor,advay.contractor@sentinelcorp.com,+91-92144-88039,Finance,Finance Manager,2024-08-14
+EMP037,Harini Choudhury,harini.choudhury@sentinelcorp.com,+91-81188-01220,Sales,Sales Manager,2023-07-28
+EMP038,Radhika Dugar,radhika.dugar@sentinelcorp.com,+91-68808-27938,Finance,Finance Executive,2023-11-03
+EMP039,Aarush Lall,aarush.lall@sentinelcorp.com,+91-81127-32018,IT,IT Manager,2023-01-27
+EMP040,Yashica Cherian,yashica.cherian@sentinelcorp.com,+91-98900-92214,Procurement,Procurement Manager,2022-09-12
+EMP041,Yashica Issac,yashica.issac@sentinelcorp.com,+91-81697-17601,Finance,Finance Executive,2022-06-26
+EMP042,Kashvi Edwin,kashvi.edwin@sentinelcorp.com,+91-69064-20374,Procurement,Procurement Manager,2022-07-12
+EMP043,Ekiya Suresh,ekiya.suresh@sentinelcorp.com,+91-75617-26685,Finance,Finance Manager,2024-07-22
+EMP044,Isaac Patil,isaac.patil@sentinelcorp.com,+91-80832-12097,Finance,Accountant,2024-07-23
+EMP045,Wriddhish Bhardwaj,wriddhish.bhardwaj@sentinelcorp.com,+91-60058-43719,Procurement,Procurement Intern,2021-09-25
+EMP046,Farhan Chada,farhan.chada@sentinelcorp.com,+91-77239-72309,Operations,Operations Executive,2023-05-26
+EMP047,Ekapad Walia,ekapad.walia@sentinelcorp.com,+91-62442-71511,Operations,Operations Executive,2021-03-15
+EMP048,Kabir Soman,kabir.soman@sentinelcorp.com,+91-92088-05482,Operations,Operations Executive,2022-09-24
+EMP049,Alka Wable,alka.wable@sentinelcorp.com,+91-83441-89399,Procurement,Procurement Officer,2022-05-27
+EMP050,Siddharth Zacharia,siddharth.zacharia@sentinelcorp.com,+91-92532-31029,Finance,Accountant,2021-11-29
+EMP051,Devika Rastogi,devika.rastogi@sentinelcorp.com,+91-90406-23509,Sales,Sales Executive,2022-11-12
+EMP052,Raksha Varughese,raksha.varughese@sentinelcorp.com,+91-74371-20866,Finance,Accountant,2021-08-10
+EMP053,Jai Kota,jai.kota@sentinelcorp.com,+91-93644-26158,Procurement,Procurement Officer,2023-08-01
+EMP054,Devansh Nigam,devansh.nigam@sentinelcorp.com,+91-73652-03101,Finance,Finance Manager,2024-09-13
+EMP055,Victor Kannan,victor.kannan@sentinelcorp.com,+91-84564-09099,Procurement,Procurement Manager,2022-07-26
+EMP056,Ekavir Bhargava,ekavir.bhargava@sentinelcorp.com,+91-80452-15118,Finance,Accountant,2022-06-19
+EMP057,Ekansh Balay,ekansh.balay@sentinelcorp.com,+91-80626-14208,Operations,Operations Manager,2024-05-06
+EMP058,Ekavir Varkey,ekavir.varkey@sentinelcorp.com,+91-99932-67033,Operations,Operations Executive,2021-08-25
+EMP059,Arya Sunder,arya.sunder@sentinelcorp.com,+91-80727-92901,Procurement,Procurement Officer,2023-06-13
+EMP060,Kevin Solanki,kevin.solanki@sentinelcorp.com,+91-75967-56531,Operations,Operations Manager,2021-05-24
+EMP061,Urvashi Ray,urvashi.ray@sentinelcorp.com,+91-82041-94339,Procurement,Procurement Intern,2022-09-08
+EMP062,Girindra Chatterjee,girindra.chatterjee@sentinelcorp.com,+91-86592-91384,Procurement,Procurement Intern,2022-08-29
+EMP063,Irya Sampath,irya.sampath@sentinelcorp.com,+91-96211-88777,Procurement,Procurement Officer,2021-12-23
+EMP064,Unni Bhagat,unni.bhagat@sentinelcorp.com,+91-98977-00053,Operations,Operations Executive,2022-09-15
+EMP065,Darsh Rau,darsh.rau@sentinelcorp.com,+91-99502-79516,IT,IT Manager,2024-09-02
+EMP066,Ikbal Kothari,ikbal.kothari@sentinelcorp.com,+91-97244-88555,Procurement,Procurement Manager,2022-03-14
+EMP067,Ranveer Yadav,ranveer.yadav@sentinelcorp.com,+91-64649-67561,IT,IT Support,2024-09-21
+EMP068,Logan Sami,logan.sami@sentinelcorp.com,+91-63848-88184,Finance,Accountant,2022-09-28
+EMP069,Arya Shere,arya.shere@sentinelcorp.com,+91-72414-03201,Sales,Sales Manager,2021-04-05
+EMP070,Faqid Savant,faqid.savant@sentinelcorp.com,+91-91193-59692,Procurement,Procurement Manager,2023-04-29
+EMP071,Chandresh Zachariah,chandresh.zachariah@sentinelcorp.com,+91-98099-52383,Procurement,Procurement Officer,2022-05-15
+EMP072,Girik Khalsa,girik.khalsa@sentinelcorp.com,+91-61746-55724,Sales,Sales Manager,2022-03-25
+EMP073,Niharika Sunder,niharika.sunder@sentinelcorp.com,+91-90822-73060,Operations,Operations Manager,2022-05-26
+EMP074,Tanay Rattan,tanay.rattan@sentinelcorp.com,+91-92184-60901,Sales,Sales Executive,2024-09-29
+EMP075,Nitesh Raghavan,nitesh.raghavan@sentinelcorp.com,+91-98270-55933,Finance,Accountant,2024-01-28
+EMP076,Madhavi Lanka,madhavi.lanka@sentinelcorp.com,+91-97373-33972,IT,IT Support,2022-05-22
+EMP077,Bhavika Sampath,bhavika.sampath@sentinelcorp.com,+91-93919-35992,Procurement,Procurement Intern,2023-06-20
+EMP078,Mohammed Gupta,mohammed.gupta@sentinelcorp.com,+91-83841-35614,Operations,Operations Manager,2022-11-19
+EMP079,Teerth Bhardwaj,teerth.bhardwaj@sentinelcorp.com,+91-62267-19769,IT,IT Manager,2022-04-19
+EMP080,Dipta Bhandari,dipta.bhandari@sentinelcorp.com,+91-71052-54377,IT,IT Support,2023-04-15
+EMP081,Vansha Thakkar,vansha.thakkar@sentinelcorp.com,+91-96812-08161,Operations,Operations Manager,2022-02-28
+EMP082,Dakshesh Trivedi,dakshesh.trivedi@sentinelcorp.com,+91-69432-49857,Procurement,Procurement Intern,2023-09-04
+EMP083,Quincy Biswas,quincy.biswas@sentinelcorp.com,+91-84892-98759,Procurement,Procurement Manager,2023-03-10
+EMP084,Wahab Raval,wahab.raval@sentinelcorp.com,+91-77999-28760,IT,IT Support,2022-07-13
+EMP085,Yatin Baral,yatin.baral@sentinelcorp.com,+91-95507-87670,Sales,Sales Executive,2023-04-09
+EMP086,Oni Virk,oni.virk@sentinelcorp.com,+91-78751-03534,Procurement,Procurement Intern,2023-03-18
+EMP087,Advika Jayaraman,advika.jayaraman@sentinelcorp.com,+91-67022-17786,Finance,Finance Executive,2023-08-04
+EMP088,William Lanka,william.lanka@sentinelcorp.com,+91-86211-42906,IT,IT Manager,2022-03-10
+EMP089,Karan Mital,karan.mital@sentinelcorp.com,+91-94558-98567,Procurement,Procurement Intern,2023-05-14
+EMP090,Diya Bora,diya.bora@sentinelcorp.com,+91-67705-02540,Operations,Operations Manager,2024-01-10
+EMP091,Tara Chaudhry,tara.chaudhry@sentinelcorp.com,+91-83673-85215,IT,IT Manager,2021-05-21
+EMP092,Tanay Toor,tanay.toor@sentinelcorp.com,+91-64051-26130,Procurement,Procurement Officer,2021-02-11
+EMP093,Kevin Palla,kevin.palla@sentinelcorp.com,+91-77758-87747,Procurement,Procurement Officer,2021-08-23
+EMP094,Yash Pingle,yash.pingle@sentinelcorp.com,+91-94198-48351,Procurement,Procurement Officer,2021-12-10
+EMP095,Nakul Sarma,nakul.sarma@sentinelcorp.com,+91-75096-14168,Finance,Finance Executive,2024-03-31
+EMP096,Abhiram Mistry,abhiram.mistry@sentinelcorp.com,+91-89433-88781,Finance,Finance Manager,2023-02-08
+EMP097,Krish Lalla,krish.lalla@sentinelcorp.com,+91-69700-90520,Sales,Sales Executive,2024-07-08
+EMP098,Hredhaan Dugal,hredhaan.dugal@sentinelcorp.com,+91-89837-15866,Procurement,Procurement Manager,2024-03-05
+EMP099,Baghyawati Kade,baghyawati.kade@sentinelcorp.com,+91-96071-09038,Procurement,Procurement Intern,2023-11-03
+EMP100,Samar Lalla,samar.lalla@sentinelcorp.com,+91-98031-13833,IT,IT Support,2023-06-07
