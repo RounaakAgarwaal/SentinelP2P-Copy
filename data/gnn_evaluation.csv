@@ -1,0 +1,13 @@
+fraud_type,variant,n,rules_recall,gnn_recall,combined_recall
+category_mismatch,standard,8,1.0,0.5,1.0
+contract_rate_mismatch,standard,6,1.0,0.5555555555555555,1.0
+contract_rate_mismatch,evasive,2,0.0,0.0,0.0
+duplicate_invoice,standard,6,1.0,0.7777777777777778,1.0
+duplicate_invoice,evasive,2,0.0,1.0,1.0
+new_vendor_high_value,standard,6,1.0,1.0,1.0
+new_vendor_high_value,evasive,2,0.0,1.0,1.0
+same_creator_approver,standard,8,1.0,0.9583333333333334,1.0
+shell_vendor,standard,16,1.0,0.9583333333333334,1.0
+split_po,standard,12,1.0,0.8333333333333334,1.0
+split_po,evasive,4,0.0,0.16666666666666666,0.16666666666666666
+vendor_employee_email,standard,16,1.0,0.9583333333333334,1.0
