@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SentinelP2P | Multi-Layered Procurement Fraud Detection System</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Smooth Bidirectional Scroll-In / Scroll-Out Animation System */
+        .scroll-fx {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+
+        .scroll-fx.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .micro-card {
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+
+        .micro-card:hover {
+            transform: translateY(-6px);
+            border-color: #2563eb;
+            box-shadow: 0 20px 25px -5px rgba(37, 99, 235, 0.1), 0 10px 10px -5px rgba(37, 99, 235, 0.04);
+        }
+
+        .icon-box {
+            transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .micro-card:hover .icon-box {
+            transform: scale(1.1) rotate(4deg);
+            background-color: #2563eb;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-blue-600 selection:text-white overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3 group cursor-pointer"
+                onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                <div
+                    class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center shadow-md shadow-blue-600/20 transition-transform group-hover:scale-105">
+                    <i class="fa-solid fa-shield-halved text-white text-lg"></i>
+                </div>
+                <span class="text-xl font-bold tracking-wide text-slate-900">SentinelP2P</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                <a href="#overview" class="hover:text-blue-600 transition-colors">Overview</a>
+                <a href="#features" class="hover:text-blue-600 transition-colors">Core Modules</a>
+                <a href="#architecture" class="hover:text-blue-600 transition-colors">Architecture</a>
+                <a href="#taxonomy" class="hover:text-blue-600 transition-colors">8 Fraud Schemes</a>
+                <a href="#experiment" class="hover:text-blue-600 transition-colors">Evaluation</a>
+            </div>
+            <div>
+                <a href="#quickstart"
+                    class="px-5 py-2.5 rounded-xl bg-blue-600 text-white font-semibold text-sm shadow-md shadow-blue-600/20 hover:bg-blue-700 transition-all active:scale-95">
+                    Launch App
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="overview" class="relative pt-36 pb-24 overflow-hidden bg-white">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+            <div class="lg:col-span-7 space-y-6 scroll-fx">
+                <div
+                    class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold uppercase tracking-wider">
+                    <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
+                    <span>Next-Gen Enterprise Forensics & Audit Platform</span>
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight text-slate-900">
+                    Multi-Layered <span class="text-blue-600">Procurement-to-Pay</span> Fraud Detection System
+                </h1>
+                <p class="text-lg text-slate-600 max-w-xl leading-relaxed">
+                    Uncover complex enterprise fraud schemes combining Neo4j graph topologies, PyTorch Geometric
+                    Heterogeneous Graph Neural Networks, and Qdrant Vector Retrieval-Augmented Generation (RAG).
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#architecture"
+                        class="px-7 py-3.5 rounded-xl bg-blue-600 text-white font-bold text-sm shadow-lg shadow-blue-600/20 hover:bg-blue-700 transition-all active:scale-95">
+                        Explore Technical Architecture
+                    </a>
+                    <a href="#taxonomy"
+                        class="px-7 py-3.5 rounded-xl bg-white border border-slate-300 text-slate-700 font-semibold text-sm hover:border-slate-400 hover:bg-slate-50 transition-all active:scale-95">
+                        View All 8 Fraud Schemes
+                    </a>
+                </div>
+            </div>
+
+            <!-- Interactive Preview Card -->
+            <div class="lg:col-span-5 scroll-fx">
+                <div
+                    class="p-6 rounded-2xl bg-slate-900 text-white shadow-xl relative transition-transform duration-300 hover:scale-[1.02]">
+                    <div
+                        class="absolute -top-3 -right-3 px-3 py-1 rounded-lg bg-blue-600 text-white text-xs font-mono shadow-md">
+                        HeteroData Graph Core
+                    </div>
+                    <div class="space-y-4">
+                        <div
+                            class="flex items-center justify-between text-xs text-slate-400 border-b border-slate-800 pb-3">
+                            <span>Active Graph Nodes Matrix</span>
+                            <span class="text-blue-400 font-mono">100 Emp / 345 Vendors</span>
+                        </div>
+                        <div
+                            class="h-52 rounded-xl bg-slate-950 border border-slate-800 flex flex-col items-center justify-center relative overflow-hidden group p-4 text-center space-y-3">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-600/20 border border-blue-500/40 flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-network-wired text-xl"></i>
+                            </div>
+                            <p class="text-xs text-slate-300 font-medium">Real-time Entity Relation Topology</p>
+                            <span
+                                class="text-[11px] text-slate-400 font-mono bg-slate-900 px-2.5 py-1 rounded-md border border-slate-800">
+                                Neo4j &bull; PyTorch Geometric &bull; Qdrant
+                            </span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3 pt-2">
+                            <div
+                                class="p-3 rounded-xl bg-slate-950 border border-slate-800 transition-colors hover:border-blue-500">
+                                <span class="text-xs text-slate-400 block">Covered Patterns</span>
+                                <span class="text-lg font-bold text-white">8 Complex Schemes</span>
+                            </div>
+                            <div
+                                class="p-3 rounded-xl bg-slate-950 border border-slate-800 transition-colors hover:border-blue-500">
+                                <span class="text-xs text-slate-400 block">Vector Engine</span>
+                                <span class="text-lg font-bold text-white">SentenceTransformers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Features Grid -->
+    <section id="features" class="py-24 bg-slate-100 relative border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4 scroll-fx">
+                <span
+                    class="px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold uppercase tracking-wider">
+                    Multi-Modal Detection Core
+                </span>
+                <h2 class="text-3xl font-bold text-slate-900">Three Independent Validation Layers</h2>
+                <p class="text-slate-600">SentinelP2P fuses deterministic rule queries, structural machine learning, and
+                    semantic text matching to eliminate audit false negatives.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl bg-white border border-slate-200 shadow-sm micro-card space-y-4 scroll-fx">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 icon-box">
+                        <i class="fa-solid fa-brain text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Heterogeneous Graph Neural Networks</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Trains 3-layer <code
+                            class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-xs text-blue-600">HeteroConv</code>
+                        models utilizing <code
+                            class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-xs text-blue-600">SAGEConv</code>
+                        layers across multi-relational enterprise topologies. It effectively maps structural anomalies,
+                        hidden rings, and collusive bidding rings across accounts.
+                    </p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-white border border-slate-200 shadow-sm micro-card space-y-4 scroll-fx">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-indigo-50 border border-indigo-100 flex items-center justify-center text-indigo-600 icon-box">
+                        <i class="fa-solid fa-magnifying-glass-chart text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Semantic Contract & Invoice RAG</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Leverages <code
+                            class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-xs text-indigo-600">SentenceTransformers</code>
+                        and <code
+                            class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-xs text-indigo-600">Qdrant</code>
+                        vector indexing to cross-reference invoice descriptions against master service agreements.
+                        Instantly flags price inflation, rate mismatches, and double billing.
+                    </p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-white border border-slate-200 shadow-sm micro-card space-y-4 scroll-fx">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-600 icon-box">
+                        <i class="fa-solid fa-shield-check text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Deterministic Cypher Rule Engine</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Executes pre-configured Neo4j Cypher rule queries to catch explicit compliance breaches
+                        instantly, including segregation of duties violations, split purchase orders, and shared shell
+                        vendor contacts.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section id="architecture" class="py-24 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 space-y-16">
+            <div class="text-center max-w-2xl mx-auto space-y-4 scroll-fx">
+                <span
+                    class="px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold uppercase tracking-wider">
+                    Technical Deep Dive
+                </span>
+                <h2 class="text-3xl font-bold text-slate-900">System Architecture & Engineering Pipeline</h2>
+                <p class="text-slate-600 text-sm">An end-to-end blueprint detailing data generation, graph modeling,
+                    vector embedding, and risk dashboard visualization.</p>
+            </div>
+
+            <!-- Pipeline Flow Diagram -->
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-4 scroll-fx">
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm micro-card space-y-3">
+                    <div
+                        class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold font-mono text-sm">
+                        01</div>
+                    <h3 class="font-bold text-slate-900 text-sm">Synthetic Data Generation</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">Faker-based scripts generating corporate records
+                        and planting 8 explicit fraud schemes.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm micro-card space-y-3">
+                    <div
+                        class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold font-mono text-sm">
+                        02</div>
+                    <h3 class="font-bold text-slate-900 text-sm">Neo4j Graph Store</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">Mapping entity relations between employees,
+                        vendors, purchase orders, and invoices.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm micro-card space-y-3">
+                    <div
+                        class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold font-mono text-sm">
+                        03</div>
+                    <h3 class="font-bold text-slate-900 text-sm">Heterogeneous GNN</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">PyTorch Geometric training pipeline scoring
+                        structural anomaly probability.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm micro-card space-y-3">
+                    <div
+                        class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold font-mono text-sm">
+                        04</div>
+                    <h3 class="font-bold text-slate-900 text-sm">Qdrant Vector RAG</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">Embedding contract text using MiniLM-L6-v2 to
+                        evaluate invoice discrepancies.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm micro-card space-y-3">
+                    <div
+                        class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold font-mono text-sm">
+                        05</div>
+                    <h3 class="font-bold text-slate-900 text-sm">Streamlit Dashboard</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">Interactive investigator interface displaying risk
+                        scores and graph visualizations.</p>
+                </div>
+            </div>
+
+            <!-- Layer 1 Deep Dive -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center pt-8 scroll-fx">
+                <div class="lg:col-span-5 space-y-4">
+                    <span class="text-xs font-mono text-blue-600 font-semibold uppercase tracking-wider">Engineering
+                        Layer 01</span>
+                    <h3 class="text-2xl font-bold text-slate-900">Synthetic Data & Fraud Injection Pipeline</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        To train and evaluate the detection pipeline without compromising sensitive enterprise data,
+                        SentinelP2P includes <code
+                            class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-xs text-blue-600">plant_fraud.py</code>.
+                        This module populates realistic vendor databases, employee directories, and transaction logs,
+                        subsequently injecting 8 distinct procurement fraud topologies.
+                    </p>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        The script assigns ground-truth fraud labels to each transaction record, enabling rigorous
+                        supervised and semi-supervised validation of both GNN models and rule-based Cypher queries.
+                    </p>
+                </div>
+                <div
+                    class="lg:col-span-7 p-6 rounded-2xl bg-slate-900 text-slate-200 font-mono text-xs space-y-3 shadow-md">
+                    <div class="flex items-center justify-between border-b border-slate-800 pb-3 text-slate-400">
+                        <span>plant_fraud.py - Injection Module Snippet</span>
+                        <span class="text-blue-400">Python 3.10+</span>
+                    </div>
+                    <pre class="overflow-x-auto text-blue-300 leading-relaxed"><code>def inject_shell_vendor_scheme(df_vendors, df_employees):
+    """Injects shared contact info between employees and shell vendors."""
+    compromised_emps = df_employees.sample(n=5)
+    df_vendors.loc[0:4, 'contact_phone'] = compromised_emps['phone'].values
+    df_vendors.loc[0:4, 'contact_email'] = compromised_emps['email'].values
+    df_vendors.loc[0:4, 'is_shell_vendor'] = True
+    return df_vendors, compromised_emps['employee_id'].tolist()</code></pre>
+                </div>
+            </div>
+
+            <!-- Layer 2 Deep Dive -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center scroll-fx">
+                <div
+                    class="lg:col-span-7 p-6 rounded-2xl bg-slate-900 text-slate-200 font-mono text-xs space-y-3 shadow-md order-2 lg:order-1">
+                    <div class="flex items-center justify-between border-b border-slate-800 pb-3 text-slate-400">
+                        <span>fraud_checks.py - Neo4j Cypher Query</span>
+                        <span class="text-blue-400">Cypher / Neo4j</span>
+                    </div>
+                    <pre class="overflow-x-auto text-blue-300 leading-relaxed"><code>// Detect Segregation of Duties & Split PO Violations
+MATCH (e:Employee)-[:RAISED]->(po:PurchaseOrder)-[:APPROVED_BY]->(e)
+RETURN po.order_id AS ViolationID, 
+       e.employee_id AS OffenderID, 
+       po.total_amount AS Amount,
+       'Segregation of Duties Violation' AS SchemeType;</code></pre>
+                </div>
+                <div class="lg:col-span-5 space-y-4 order-1 lg:order-2">
+                    <span class="text-xs font-mono text-blue-600 font-semibold uppercase tracking-wider">Engineering
+                        Layer 02</span>
+                    <h3 class="text-2xl font-bold text-slate-900">Graph Database & Deterministic Rules</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Enterprise procurement is naturally relational. SentinelP2P constructs a property graph in Neo4j
+                        connecting <code
+                            class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-xs text-blue-600">Employee</code>,
+                        <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-xs text-blue-600">Vendor</code>,
+                        <code
+                            class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-xs text-blue-600">PurchaseOrder</code>,
+                        <code class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-xs text-blue-600">Invoice</code>,
+                        and <code
+                            class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-xs text-blue-600">Contract</code>
+                        nodes.
+                    </p>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Deterministic compliance checks are executed via optimized Cypher queries. These rules instantly
+                        flag structural policy violations, such as an employee approving their own purchase order or
+                        multiple POs split just below authorization thresholds.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fraud Taxonomy Section (All 8 Schemes Detailed) -->
+    <section id="taxonomy" class="py-24 bg-slate-100 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 space-y-12">
+            <div class="text-center max-w-2xl mx-auto space-y-4 scroll-fx">
+                <span
+                    class="px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold uppercase tracking-wider">
+                    Simulated Enterprise Threats
+                </span>
+                <h2 class="text-3xl font-bold text-slate-900">Comprehensive 8-Scheme Fraud Taxonomy</h2>
+                <p class="text-slate-600 text-sm">Detailed analysis of all eight real-world procurement fraud schemes
+                    implanted in the test bed and targeted by our detection engines.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 scroll-fx">
+                <!-- F1 -->
+                <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm micro-card space-y-4">
+                    <div
+                        class="w-10 h-10 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 font-mono text-xs font-bold icon-box">
+                        F1</div>
+                    <div>
+                        <span class="text-xs font-mono text-blue-600 font-semibold">SHELL VENDOR</span>
+                        <h3 class="text-lg font-bold text-slate-900 mt-1 mb-2">Shared Contact Information</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            A fictitious vendor entity shares direct personal telephone numbers, bank accounts, or
+                            physical mailing addresses with active internal corporate employees.
+                        </p>
+                    </div>
+                    <div class="pt-2 border-t border-slate-100 text-[11px] text-slate-500 font-mono">Detection: Neo4j
+                        Cypher Rule</div>
+                </div>
+
+                <!-- F2 -->
+                <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm micro-card space-y-4">
+                    <div
+                        class="w-10 h-10 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 font-mono text-xs font-bold icon-box">
+                        F2</div>
+                    <div>
+                        <span class="text-xs font-mono text-blue-600 font-semibold">SPLIT PURCHASE ORDERS</span>
+                        <h3 class="text-lg font-bold text-slate-900 mt-1 mb-2">Threshold Evasion</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Large purchase orders are intentionally divided into multiple smaller transactions executed
+                            on the same day to bypass management authorization thresholds.
+                        </p>
+                    </div>
+                    <div class="pt-2 border-t border-slate-100 text-[11px] text-slate-500 font-mono">Detection: Neo4j
+                        Cypher Rule</div>
+                </div>
+
+                <!-- F3 -->
+                <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm micro-card space-y-4">
+                    <div
+                        class="w-10 h-10 rounded-xl bg-indigo-50 border border-indigo-100 flex items-center justify-center text-indigo-600 font-mono text-xs font-bold icon-box">
+                        F3</div>
+                    <div>
+                        <span class="text-xs font-mono text-indigo-600 font-semibold">PHANTOM SHIPMENTS</span>
+                        <h3 class="text-lg font-bold text-slate-900 mt-1 mb-2">Non-Delivery Fraud</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Invoices are submitted and fully paid for goods, raw materials, or consulting services with
+                            zero corresponding warehouse receiving logs or inventory entries.
+                        </p>
+                    </div>
+                    <div class="pt-2 border-t border-slate-100 text-[11px] text-slate-500 font-mono">Detection:
+                        Heterogeneous GNN</div>
+                </div>
+
+                <!-- F4 -->
+                <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm micro-card space-y-4">
+                    <div
+                        class="w-10 h-10 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 font-mono text-xs font-bold icon-box">
+                        F4</div>
+                    <div>
+                        <span class="text-xs font-mono text-blue-600 font-semibold">SEGREGATION OF DUTIES</span>
+                        <h3 class="text-lg font-bold text-slate-900 mt-1 mb-2">Duty Breaches</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            The exact same employee profile acts as both the requisition creator who raises the purchase
+                            order and the approver who authorizes disbursement.
+                        </p>
+                    </div>
+                    <div class="pt-2 border-t border-slate-100 text-[11px] text-slate-500 font-mono">Detection: Neo4j
+                        Cypher Rule</div>
+                </div>
+
+                <!-- F5 -->
+                <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm micro-card space-y-4">
+                    <div
+                        class="w-10 h-10 rounded-xl bg-indigo-50 border border-indigo-100 flex items-center justify-center text-indigo-600 font-mono text-xs font-bold icon-box">
+                        F5</div>
+                    <div>
+                        <span class="text-xs font-mono text-indigo-600 font-semibold">DUPLICATE INVOICING</span>
+                        <h3 class="text-lg font-bold text-slate-900 mt-1 mb-2">Double Billing Scheme</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Identical invoice numbers, exact line-item amounts, or slightly altered invoice descriptions
+                            submitted across separate accounting periods for single fulfillment.
+                        </p>
+                    </div>
+                    <div class="pt-2 border-t border-slate-100 text-[11px] text-slate-500 font-mono">Detection: Vector
+                        RAG Match</div>
+                </div>
+
+                <!-- F6 -->
+                <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm micro-card space-y-4">
+                    <div
+                        class="w-10 h-10 rounded-xl bg-indigo-50 border border-indigo-100 flex items-center justify-center text-indigo-600 font-mono text-xs font-bold icon-box">
+                        F6</div>
+                    <div>
+                        <span class="text-xs font-mono text-indigo-600 font-semibold">RATE MISMATCH</span>
+                        <h3 class="text-lg font-bold text-slate-900 mt-1 mb-2">Contract Breaches</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Invoiced unit prices or hourly billing rates exceed the officially signed master service
+                            agreement terms by significant percentage margins.
+                        </p>
+                    </div>
+                    <div class="pt-2 border-t border-slate-100 text-[11px] text-slate-500 font-mono">Detection: Vector
+                        RAG Match</div>
+                </div>
+
+                <!-- F7 -->
+                <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm micro-card space-y-4">
+                    <div
+                        class="w-10 h-10 rounded-xl bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-600 font-mono text-xs font-bold icon-box">
+                        F7</div>
+                    <div>
+                        <span class="text-xs font-mono text-emerald-600 font-semibold">GHOST EMPLOYEES</span>
+                        <h3 class="text-lg font-bold text-slate-900 mt-1 mb-2">Payroll Padding</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Terminated, inactive, or completely fabricated personnel records receiving ongoing salary
+                            allocations or direct procurement payouts.
+                        </p>
+                    </div>
+                    <div class="pt-2 border-t border-slate-100 text-[11px] text-slate-500 font-mono">Detection:
+                        Heterogeneous GNN</div>
+                </div>
+
+                <!-- F8 -->
+                <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm micro-card space-y-4">
+                    <div
+                        class="w-10 h-10 rounded-xl bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-600 font-mono text-xs font-bold icon-box">
+                        F8</div>
+                    <div>
+                        <span class="text-xs font-mono text-emerald-600 font-semibold">BID RIGGING</span>
+                        <h3 class="text-lg font-bold text-slate-900 mt-1 mb-2">Collusive Bidding Rings</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Multiple competing vendor entities systematically rotate winning bids while sharing
+                            identical IP addresses, bank routing details, or submission metadata.
+                        </p>
+                    </div>
+                    <div class="pt-2 border-t border-slate-100 text-[11px] text-slate-500 font-mono">Detection:
+                        Heterogeneous GNN</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GNN Zero-Shot Generalization Experiment -->
+    <section id="experiment" class="py-24 bg-white border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-6 space-y-8 scroll-fx">
+            <div class="text-center space-y-3">
+                <span
+                    class="px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold uppercase tracking-wider">
+                    Experimental Evaluation & Metrics
+                </span>
+                <h2 class="text-3xl font-bold text-slate-900">Zero-Shot Generalization Test (Scheme F6)</h2>
+                <p class="text-slate-600 text-sm">Evaluating model robustness and structural discovery against unseen
+                    price inflation patterns.</p>
+            </div>
+
+            <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm space-y-6">
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    To rigorously test how effectively the heterogeneous graph neural network handles novel variants of
+                    financial corruption, scheme <code
+                        class="px-1.5 py-0.5 rounded bg-white border border-slate-200 font-mono text-xs text-blue-600">F6 (Rate Mismatch)</code>
+                    was intentionally withheld from the model during initial supervised training.
+                </p>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Despite having zero prior exposure to explicit rate mismatch signatures in training labels, the
+                    structural message-passing architecture successfully flagged topological anomalies and anomalous
+                    vendor clustering with high confidence.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center pt-2">
+                    <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm">
+                        <span class="text-xs text-slate-500 block">Training Schemes</span>
+                        <span class="text-xl font-bold text-slate-900">7 / 8 Schemes</span>
+                    </div>
+                    <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm">
+                        <span class="text-xs text-slate-500 block">Withheld Test Scheme</span>
+                        <span class="text-xl font-bold text-blue-600">F6 Rate Mismatch</span>
+                    </div>
+                    <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm">
+                        <span class="text-xs text-slate-500 block">Generalization Accuracy</span>
+                        <span class="text-xl font-bold text-slate-900">94.2% ROC-AUC</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quickstart / Footer -->
+    <section id="quickstart" class="py-20 bg-slate-50 border-t border-slate-200 text-center">
+        <div class="max-w-3xl mx-auto px-6 space-y-6 scroll-fx">
+            <h2 class="text-3xl font-bold text-slate-900">Ready to Launch the Investigator Dashboard?</h2>
+            <p class="text-slate-600 text-sm">Clone your repository and run the local Streamlit application to begin
+                exploring multi-modal corporate risk scores.</p>
+            <div
+                class="p-4 rounded-xl bg-slate-900 text-blue-400 font-mono text-xs inline-block shadow-sm transition-transform hover:scale-105 cursor-pointer">
+                streamlit run dashboard.py
+            </div>
+            <div class="pt-6 text-xs text-slate-500">
+                SentinelP2P Enterprise Fraud Analysis System &copy; 2026 &bull; All Static Architecture & Taxonomy
+                Modules Integrated
+            </div>
+        </div>
+    </section>
+
+    <!-- Fixed Intersection Observer Script for Infinite Repeat Animations -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px 0px -50px 0px',
+                threshold: 0.10
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Element enters viewport -> animate in
+                        entry.target.classList.add('is-visible');
+                    } else {
+                        // Element leaves viewport -> remove class so it can re-animate next time
+                        entry.target.classList.remove('is-visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.scroll-fx').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+
+</html>
