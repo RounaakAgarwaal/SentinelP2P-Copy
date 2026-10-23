@@ -1,23 +1,3 @@
-"""
-SentinelP2P - fraud dashboard (Streamlit).
-
-    streamlit run dashboard.py
-
-Needs (in <repo>/data, produced by the pipeline):
-    dashboard_data.csv   <- python build_dashboard_data.py   (rules + GNN + RAG per invoice)
-    employees.csv vendors.csv purchase_orders.csv invoices.csv contracts.csv
-Optional (extra pages light up when present):
-    rule_evaluation.csv, gnn_evaluation.csv, gnn_holdout.csv, ground_truth.csv  (model evaluation page)
-
-Pages
-  1. Overview            - totals, who caught what, alerts by rule, flagged invoices over time
-  2. Review & Inspector  - filter / rank flagged invoices; per-invoice investigation built ONLY from
-                           internal evidence (vendor/PO/contract records, rule explanations, GNN score,
-                           RAG evidence); auditor decisions are saved to data/audit_log.csv
-  3. Contract Search     - semantic search over the contracts + the RAG mismatch list
-  4. Model Evaluation    - rules vs GNN vs combined, against the planted-fraud answer key
-There is no simulated "external registry" step: nothing here claims to have checked something it did not.
-"""
 from datetime import datetime
 from pathlib import Path
 

@@ -1,14 +1,3 @@
-"""
-SentinelP2P - Phase 2 step 4: combine rules + GNN + RAG into one table for the dashboard.
-
-    python build_dashboard_data.py                # reads/writes <repo>/data/
-    python build_dashboard_data.py --data data_seed7
-
-Needs (in the data folder): invoices.csv, rule_flags.csv (or rule_flags_pandas.csv),
-gnn_scores.csv, rag_similarity_scores.csv.  Writes dashboard_data.csv there.
-An invoice is "Flagged" if ANY rule fired, the GNN predicts fraud, or RAG says the
-invoice does not match the vendor's contract.
-"""
 import argparse
 from pathlib import Path
 

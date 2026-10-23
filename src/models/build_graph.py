@@ -1,23 +1,3 @@
-"""
-SentinelP2P - Phase 2 step 1: build the heterogeneous graph for the GNN.
-
-    python src/models/build_graph.py                 # reads <repo>/data, writes data/graph_data.pt
-    python src/models/build_graph.py --data data_seed7
-
-What changed vs v1
-  * Labels come from data/ground_truth.csv (true planted fraud), NOT from the rule
-    flags.  v1 trained the GNN to imitate the rules, so it could never beat them.
-  * Categories are one-hot encoded (v1 fed 'IT Hardware'=0, 'Catering'=2 ... as
-    numbers, which implies a fake ordering).
-  * Two feature sets are stored so train_gnn.py can compare them:
-      x_basic : raw attributes only (amounts, categories, status, vendor age ...)
-      x_full  : basic + relational features a message-passing GNN cannot compute
-                by itself (creator == approver, invoice/PO amount ratio, invoice /
-                contract-rate ratio, closeness to a sibling invoice, phone/email
-                equality with an employee, same-day PO count ...)
-    These are plain measurements, not rule verdicts: no thresholds are applied.
-  * Nothing from ground_truth is used as a feature - only as the training label.
-"""
 import argparse
 from pathlib import Path
 

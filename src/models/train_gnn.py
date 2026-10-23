@@ -1,29 +1,3 @@
-"""
-SentinelP2P - Phase 2 step 2: train and honestly evaluate the fraud GNN.
-
-    python src/models/train_gnn.py                       # supervised, full features, 5-fold CV x 3 seeds
-    python src/models/train_gnn.py --features basic      # raw attributes only (no relational features)
-    python src/models/train_gnn.py --experiment holdout  # also: never show one fraud type, test on it
-    python src/models/train_gnn.py --experiment both
-
-How it is evaluated (why the numbers can be trusted)
-  * Labels are the TRUE planted fraud (ground_truth.csv), not rule flags.
-  * 5-fold cross-validation grouped by fraud case: both invoices of one planted
-    case always sit in the same fold, so the model is never tested on a case it
-    saw during training.  Every invoice gets an out-of-fold (unseen) score.
-  * The decision threshold is picked on a validation slice of the TRAINING folds.
-  * Repeated for several random seeds; mean +- std is reported.
-  * Compared against the Phase 1 rules on the same invoices, split into
-    "standard" cases (textbook pattern) and "evasive" cases (built to dodge the
-    plain rules).  That split is the point of Phase 2: does the GNN catch what the
-    rules miss, and does it also keep false alarms low?
-  * holdout experiment: one fraud type is removed from training and validation
-    entirely, then we measure how many of its invoices the GNN still flags
-    (does it learn "suspicious" or only memorise known patterns?).
-
-Outputs: data/gnn_scores.csv (invoice_id, gnn_risk_score, gnn_prediction, + out-of-fold marker),
-         data/gnn_evaluation.csv, data/gnn_holdout.csv
-"""
 import argparse
 import copy
 import sys
