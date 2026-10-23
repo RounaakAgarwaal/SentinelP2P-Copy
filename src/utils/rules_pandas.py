@@ -1,12 +1,3 @@
-"""
-SentinelP2P - the 8 Phase 1 fraud rules implemented in pandas.
-
-Same logic as fraud_checks.py (Cypher). Use it to
-  * run Phase 1 without Neo4j, and
-  * cross-check the Cypher results:  python evaluate_rules.py --compare data/rule_flags.csv data/rule_flags_pandas.csv
-
-Output: invoice-level flag table (invoice_id + 8 boolean rule_* columns).
-"""
 import argparse
 from pathlib import Path
 

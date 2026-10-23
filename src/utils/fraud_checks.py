@@ -1,16 +1,3 @@
-"""
-SentinelP2P - Phase 1 rule-based fraud detection (8 Cypher rules).
-
-    python src/utils/fraud_checks.py                 # run on Neo4j, print findings, write data/rule_flags.csv
-    python src/utils/fraud_checks.py --out my.csv
-
-Every rule returns INVOICE ids, so the output is one row per invoice with 8 boolean
-rule_* columns (the same shape the dashboard / GNN / agent code consume). Vendor-
-and PO-level rules flag every invoice that belongs to the suspicious vendor / PO.
-
-Thresholds (keep in sync with generate_dataset.py / rules_pandas.py):
-    APPROVAL_LIMIT = 15000   RATE_TOLERANCE = 1.3   NEW_VENDOR_DAYS = 7
-"""
 import argparse
 import os
 import sys

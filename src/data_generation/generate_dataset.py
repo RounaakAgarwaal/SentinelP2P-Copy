@@ -1,37 +1,3 @@
-"""
-SentinelP2P - Phase 1 synthetic data generator (v2)
-
-Replaces the five old scripts (generate_employees / vendors / contracts / pos /
-invoices) AND plant_fraud.py with ONE seeded script.
-
-Writes to <repo>/data/ :
-    employees.csv  vendors.csv  contracts.csv  purchase_orders.csv  invoices.csv
-        -> same file names and columns as before, so the loader, build_graph.py,
-           RAG scripts and the dashboard keep working.
-    ground_truth.csv        invoice-level answer key (NEVER load into Neo4j / GNN features)
-    ground_truth_cases.csv  one row per planted case (what was planted, where)
-    dataset_manifest.json   seed + parameters + counts (cite this in the report)
-
-Design rules
-  * Clean data is clean: normal 3-way match (PO = invoice amount), invoice
-    description/category agree with the PO and the vendor's contract, creator
-    != approver, vendors only get POs 30+ days after onboarding, no vendor has
-    two POs within a day of each other.  So a rule firing on clean data is a
-    real false positive, not a generator artefact.
-  * Fraud is planted by case, with NO tell-tale text ("Shell Vendor 3",
-    "(resubmitted)", "UNVERIFIED" ...).  IDs are assigned AFTER shuffling by date,
-    so fraud records are not sitting at the end of the files.
-  * A share of cases are "evasive" (e.g. split POs one day apart, duplicate with a
-    slightly different amount, inflated rate just under the 1.3x threshold,
-    PO on day 9-14 after onboarding).  Plain rules miss these on purpose, so the
-    evaluation reports honest recall and Phase 2 (GNN) has something to add.
-  * A few benign look-alikes (two small POs on one day that sum to < limit) test
-    precision.
-
-Usage (from anywhere):
-    python src/data_generation/generate_dataset.py --seed 42
-    python src/data_generation/generate_dataset.py --seed 7 --out data_seed7
-"""
 import argparse
 import csv
 import json

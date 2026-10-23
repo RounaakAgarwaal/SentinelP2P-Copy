@@ -1,25 +1,3 @@
-"""
-SentinelP2P - load the Phase 1 CSVs into Neo4j.
-
-    python src/models/load_to_neo4j.py                 # reads <repo>/data
-    python src/models/load_to_neo4j.py --data data_seed7
-
-Needs a .env file in the repo root:
-    NEO4J_URI=neo4j+s://xxxx.databases.neo4j.io   (or bolt://localhost:7687)
-    NEO4J_USER=neo4j
-    NEO4J_PASSWORD=...
-
-Graph schema (unchanged, so build_graph.py / RAG / agent code keep working):
-    (Employee)-[:CREATED]->(Vendor)        (Employee)-[:RAISED]->(PurchaseOrder)
-    (Employee)-[:APPROVED]->(PurchaseOrder) (Vendor)-[:RECEIVED]->(PurchaseOrder)
-    (PurchaseOrder)-[:HAS_INVOICE]->(Invoice) (Employee)-[:SUBMITTED]->(Invoice)
-    (Vendor)-[:HAS_CONTRACT]->(Contract)
-
-Improvements over v1: uniqueness constraints (fast MATCH + no duplicate nodes),
-batched writes, --data option, and a verification step that compares what is in
-Neo4j with the CSV row counts (v1 silently dropped rows whose MATCH failed).
-ground_truth*.csv is deliberately NOT loaded.
-"""
 import argparse
 import csv
 import os

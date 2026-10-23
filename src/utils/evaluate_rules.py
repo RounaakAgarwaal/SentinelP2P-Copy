@@ -1,14 +1,3 @@
-"""
-SentinelP2P - score the Phase 1 rules against the hidden answer key.
-
-    python src/utils/evaluate_rules.py                       # data/rule_flags.csv vs data/ground_truth.csv
-    python src/utils/evaluate_rules.py --flags data/rule_flags_pandas.csv
-    python src/utils/evaluate_rules.py --compare data/rule_flags.csv data/rule_flags_pandas.csv   # Cypher vs pandas
-
-Each rule is matched with the fraud type it was written to catch (RULE_TO_TYPE).
-"standard" cases are the textbook pattern; "evasive" cases were built to dodge the
-plain rule, so recall on them shows the honest limit of rule-based detection.
-"""
 import argparse
 from pathlib import Path
 
