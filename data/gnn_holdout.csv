@@ -1,0 +1,9 @@
+held_out_type,n,rules_recall,gnn_recall,gnn_false_alarms
+category_mismatch,8,1.0,0.0,12.5
+contract_rate_mismatch,8,0.75,0.0,8.5
+duplicate_invoice,8,0.75,0.0,7.0
+new_vendor_high_value,8,0.75,0.0,13.0
+same_creator_approver,8,1.0,0.0,12.5
+shell_vendor,16,1.0,0.0,13.0
+split_po,16,0.75,0.0625,12.5
+vendor_employee_email,16,1.0,0.03125,10.5

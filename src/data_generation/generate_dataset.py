@@ -269,11 +269,14 @@ def build(seed, cases, n_employees, n_vendors, n_clean_pos, evasive_share, traps
     taken = set()
 
     def take_invoice(pred=lambda i: True):
-        for i in pool:
-            if i not in taken and pred(i):
-                taken.add(i)
-                return i
-        raise RuntimeError("not enough clean invoices")
+        # random pick among still-free invoices (picking "first free" in the shuffled pool
+        # would bias later fraud types away from the invoices earlier types already used)
+        candidates = [i for i in pool if i not in taken and pred(i)]
+        if not candidates:
+            raise RuntimeError("not enough clean invoices")
+        i = rng.choice(candidates)
+        taken.add(i)
+        return i
 
     # ================================================================== FRAUD
     # 1. shell vendor: vendor phone == phone of the employee who created it
@@ -370,8 +373,9 @@ def build(seed, cases, n_employees, n_vendors, n_clean_pos, evasive_share, traps
         log_case("vendor_employee_email", "standard", [v], ps, fi, "vendor email equals an employee email")
 
     # 8. invoice category differs from PO category
-    for _ in range(cases):
-        i = take_invoice()
+    for k in range(cases):
+        # half of these sit on contract vendors so the contract-RAG check can be tested on them
+        i = take_invoice((lambda x: vendors[pos[invoices[x]["po"]]["vendor"]]["_rate"] is not None) if k % 2 == 0 else (lambda x: True))
         wrong = rng.choice([c for c in CATEGORIES if c != invoices[i]["item_category"]])
         invoices[i]["item_category"] = wrong
         invoices[i]["description"] = rng.choice(DESCRIPTIONS[wrong])

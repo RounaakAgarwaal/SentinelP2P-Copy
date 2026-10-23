@@ -197,7 +197,7 @@ def main():
                 rows.append({"fraud_type": ft, "variant": var, "n": int(m_.sum()), "rules_recall": rr,
                              "gnn_recall": g, "combined_recall": comb})
                 print(f"{ft:26s}{var:10s}{int(m_.sum()):4d}{rr:8.2f}{g:8.2f}{comb:14.2f}")
-        pd.DataFrame(rows).to_csv(d / "gnn_evaluation.csv", index=False)
+        pd.DataFrame(rows).to_csv(d / ("gnn_evaluation.csv" if args.features == "full" else f"gnn_evaluation_{args.features}.csv"), index=False)
 
         clean = y == 0
         print(f"\nFALSE ALARMS on {int(clean.sum())} legitimate invoices:  rules={int(rule_any[clean].sum())}   "
@@ -206,9 +206,11 @@ def main():
         cm = np.mean([summarize(y, c, c)["recall"] for c in comb_all]), np.mean([summarize(y, c, c)["precision"] for c in comb_all])
         print(f"RULES OR GNN combined:  recall={cm[0]:.3f} precision={cm[1]:.3f}")
 
+        # only the full-feature model feeds the dashboard; the ablation must not overwrite it
+        sc_name = "gnn_scores.csv" if args.features == "full" else f"gnn_scores_{args.features}.csv"
         pd.DataFrame({"invoice_id": inv_ids, "gnn_risk_score": avg_p, "gnn_prediction": vote}).to_csv(
-            d / "gnn_scores.csv", index=False)
-        print(f"\nSaved out-of-fold scores for all {len(inv_ids)} invoices -> {d / 'gnn_scores.csv'}")
+            d / sc_name, index=False)
+        print(f"\nSaved out-of-fold scores for all {len(inv_ids)} invoices -> {d / sc_name}")
 
     # =============================================================== hold-out fraud type
     if args.experiment in ("holdout", "both"):

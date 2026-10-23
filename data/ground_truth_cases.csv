@@ -1,70 +1,70 @@
 case_id,fraud_type,variant,vendor_ids,po_ids,fraud_invoice_ids,note
-CASE001,shell_vendor,standard,VEN268,PO0664;PO0567,INV0643;INV0557,vendor phone equals creator's phone
-CASE002,shell_vendor,standard,VEN122,PO0132;PO0204,INV0128;INV0180,vendor phone equals creator's phone
-CASE003,shell_vendor,standard,VEN093,PO0142;PO0085,INV0135;INV0084,vendor phone equals creator's phone
-CASE004,shell_vendor,standard,VEN091,PO0451;PO0313,INV0456;INV0283,vendor phone equals creator's phone
-CASE005,shell_vendor,standard,VEN059,PO0030;PO0096,INV0024;INV0086,vendor phone equals creator's phone
-CASE006,shell_vendor,standard,VEN238,PO0297;PO0527,INV0299;INV0525,vendor phone equals creator's phone
-CASE007,shell_vendor,standard,VEN196,PO0192;PO0589,INV0188;INV0536,vendor phone equals creator's phone
-CASE008,shell_vendor,standard,VEN218,PO0337;PO0508,INV0311;INV0474,vendor phone equals creator's phone
-CASE009,split_po,evasive,VEN002,PO0137;PO0139,INV0123;INV0138,two POs 1 day apart
-CASE010,split_po,evasive,VEN298,PO0648;PO0653,INV0599;INV0636,two POs 1 day apart
-CASE011,split_po,standard,VEN161,PO0181;PO0182,INV0168;INV0185,"two POs same day, total above limit"
-CASE012,split_po,standard,VEN165,PO0152;PO0153,INV0143;INV0144,"two POs same day, total above limit"
-CASE013,split_po,standard,VEN112,PO0280;PO0281,INV0264;INV0269,"two POs same day, total above limit"
-CASE014,split_po,standard,VEN278,PO0418;PO0419,INV0413;INV0404,"two POs same day, total above limit"
-CASE015,split_po,standard,VEN246,PO0381;PO0382,INV0362;INV0373,"two POs same day, total above limit"
-CASE016,split_po,standard,VEN177,PO0306;PO0307,INV0284;INV0279,"two POs same day, total above limit"
-CASE017,benign_same_day_pos,benign,VEN002,PO0372;PO0373,,same-day small POs below limit (not fraud)
-CASE018,benign_same_day_pos,benign,VEN267,PO0447;PO0448,,same-day small POs below limit (not fraud)
-CASE019,benign_same_day_pos,benign,VEN264,PO0548;PO0549,,same-day small POs below limit (not fraud)
-CASE020,benign_same_day_pos,benign,VEN095,PO0090;PO0091,,same-day small POs below limit (not fraud)
-CASE021,benign_same_day_pos,benign,VEN020,PO0572;PO0573,,same-day small POs below limit (not fraud)
-CASE022,duplicate_invoice,evasive,,PO0531,INV0551,amount differs slightly
-CASE023,duplicate_invoice,evasive,,PO0284,INV0291,amount differs slightly
-CASE024,duplicate_invoice,standard,,PO0221,INV0203,"same PO, same amount"
-CASE025,duplicate_invoice,standard,,PO0377,INV0364,"same PO, same amount"
-CASE026,duplicate_invoice,standard,,PO0577,INV0600,"same PO, same amount"
-CASE027,duplicate_invoice,standard,,PO0288,INV0287,"same PO, same amount"
-CASE028,duplicate_invoice,standard,,PO0366,INV0366,"same PO, same amount"
-CASE029,duplicate_invoice,standard,,PO0186,INV0176,"same PO, same amount"
-CASE030,same_creator_approver,standard,,PO0190,INV0165,creator == approver
-CASE031,same_creator_approver,standard,,PO0370,INV0352,creator == approver
-CASE032,same_creator_approver,standard,,PO0278,INV0252,creator == approver
-CASE033,same_creator_approver,standard,,PO0042,INV0042,creator == approver
-CASE034,same_creator_approver,standard,,PO0597,INV0565,creator == approver
-CASE035,same_creator_approver,standard,,PO0516,INV0517,creator == approver
-CASE036,same_creator_approver,standard,,PO0654,INV0623,creator == approver
-CASE037,same_creator_approver,standard,,PO0404,INV0385,creator == approver
-CASE038,new_vendor_high_value,evasive,VEN244,PO0268,INV0261,PO on day 9-14 after onboarding
-CASE039,new_vendor_high_value,evasive,VEN239,PO0261,INV0253,PO on day 9-14 after onboarding
-CASE040,new_vendor_high_value,standard,VEN139,PO0067,INV0060,PO within 7 days of onboarding
-CASE041,new_vendor_high_value,standard,VEN216,PO0191,INV0181,PO within 7 days of onboarding
-CASE042,new_vendor_high_value,standard,VEN214,PO0189,INV0177,PO within 7 days of onboarding
-CASE043,new_vendor_high_value,standard,VEN097,PO0031,INV0025,PO within 7 days of onboarding
-CASE044,new_vendor_high_value,standard,VEN083,PO0014,INV0014,PO within 7 days of onboarding
-CASE045,new_vendor_high_value,standard,VEN304,PO0535,INV0496,PO within 7 days of onboarding
-CASE046,contract_rate_mismatch,evasive,,PO0361,INV0370,inflated but under 1.3x
-CASE047,contract_rate_mismatch,evasive,,PO0226,INV0213,inflated but under 1.3x
-CASE048,contract_rate_mismatch,standard,,PO0324,INV0296,inflated 1.4x-2.3x
-CASE049,contract_rate_mismatch,standard,,PO0305,INV0276,inflated 1.4x-2.3x
-CASE050,contract_rate_mismatch,standard,,PO0088,INV0085,inflated 1.4x-2.3x
-CASE051,contract_rate_mismatch,standard,,PO0384,INV0341,inflated 1.4x-2.3x
-CASE052,contract_rate_mismatch,standard,,PO0167,INV0153,inflated 1.4x-2.3x
-CASE053,contract_rate_mismatch,standard,,PO0469,INV0463,inflated 1.4x-2.3x
-CASE054,vendor_employee_email,standard,VEN117,PO0109;PO0341,INV0102;INV0322,vendor email equals an employee email
-CASE055,vendor_employee_email,standard,VEN081,PO0396;PO0032,INV0378;INV0035,vendor email equals an employee email
-CASE056,vendor_employee_email,standard,VEN103,PO0411;PO0461,INV0410;INV0448,vendor email equals an employee email
-CASE057,vendor_employee_email,standard,VEN150,PO0349;PO0520,INV0358;INV0521,vendor email equals an employee email
-CASE058,vendor_employee_email,standard,VEN203,PO0574;PO0581,INV0530;INV0558,vendor email equals an employee email
-CASE059,vendor_employee_email,standard,VEN193,PO0197;PO0332,INV0184;INV0305,vendor email equals an employee email
-CASE060,vendor_employee_email,standard,VEN038,PO0095;PO0023,INV0088;INV0021,vendor email equals an employee email
-CASE061,vendor_employee_email,standard,VEN164,PO0363;PO0245,INV0332;INV0239,vendor email equals an employee email
-CASE062,category_mismatch,standard,,PO0256,INV0234,invoice category != PO category
-CASE063,category_mismatch,standard,,PO0094,INV0091,invoice category != PO category
-CASE064,category_mismatch,standard,,PO0551,INV0544,invoice category != PO category
-CASE065,category_mismatch,standard,,PO0379,INV0344,invoice category != PO category
-CASE066,category_mismatch,standard,,PO0017,INV0016,invoice category != PO category
-CASE067,category_mismatch,standard,,PO0578,INV0568,invoice category != PO category
-CASE068,category_mismatch,standard,,PO0639,INV0614,invoice category != PO category
-CASE069,category_mismatch,standard,,PO0603,INV0579,invoice category != PO category
+CASE001,shell_vendor,standard,VEN268,PO0664;PO0565,INV0643;INV0554,vendor phone equals creator's phone
+CASE002,shell_vendor,standard,VEN120,PO0130;PO0201,INV0128;INV0179,vendor phone equals creator's phone
+CASE003,shell_vendor,standard,VEN093,PO0140;PO0084,INV0135;INV0085,vendor phone equals creator's phone
+CASE004,shell_vendor,standard,VEN090,PO0450;PO0316,INV0453;INV0285,vendor phone equals creator's phone
+CASE005,shell_vendor,standard,VEN059,PO0030;PO0094,INV0024;INV0087,vendor phone equals creator's phone
+CASE006,shell_vendor,standard,VEN238,PO0299;PO0526,INV0301;INV0523,vendor phone equals creator's phone
+CASE007,shell_vendor,standard,VEN195,PO0189;PO0585,INV0185;INV0533,vendor phone equals creator's phone
+CASE008,shell_vendor,standard,VEN216,PO0339;PO0507,INV0313;INV0474,vendor phone equals creator's phone
+CASE009,split_po,evasive,VEN002,PO0135;PO0137,INV0123;INV0139,two POs 1 day apart
+CASE010,split_po,evasive,VEN299,PO0647;PO0653,INV0598;INV0636,two POs 1 day apart
+CASE011,split_po,standard,VEN162,PO0181;PO0182,INV0168;INV0182,"two POs same day, total above limit"
+CASE012,split_po,standard,VEN165,PO0150;PO0151,INV0144;INV0145,"two POs same day, total above limit"
+CASE013,split_po,standard,VEN110,PO0281;PO0282,INV0265;INV0270,"two POs same day, total above limit"
+CASE014,split_po,standard,VEN278,PO0416;PO0417,INV0411;INV0403,"two POs same day, total above limit"
+CASE015,split_po,standard,VEN244,PO0380;PO0381,INV0362;INV0371,"two POs same day, total above limit"
+CASE016,split_po,standard,VEN177,PO0309;PO0310,INV0286;INV0281,"two POs same day, total above limit"
+CASE017,benign_same_day_pos,benign,VEN002,PO0371;PO0372,,same-day small POs below limit (not fraud)
+CASE018,benign_same_day_pos,benign,VEN267,PO0446;PO0447,,same-day small POs below limit (not fraud)
+CASE019,benign_same_day_pos,benign,VEN264,PO0546;PO0547,,same-day small POs below limit (not fraud)
+CASE020,benign_same_day_pos,benign,VEN095,PO0089;PO0090,,same-day small POs below limit (not fraud)
+CASE021,benign_same_day_pos,benign,VEN020,PO0570;PO0571,,same-day small POs below limit (not fraud)
+CASE022,duplicate_invoice,evasive,,PO0313,INV0312,amount differs slightly
+CASE023,duplicate_invoice,evasive,,PO0331,INV0324,amount differs slightly
+CASE024,duplicate_invoice,standard,,PO0046,INV0055,"same PO, same amount"
+CASE025,duplicate_invoice,standard,,PO0426,INV0454,"same PO, same amount"
+CASE026,duplicate_invoice,standard,,PO0530,INV0534,"same PO, same amount"
+CASE027,duplicate_invoice,standard,,PO0039,INV0040,"same PO, same amount"
+CASE028,duplicate_invoice,standard,,PO0285,INV0288,"same PO, same amount"
+CASE029,duplicate_invoice,standard,,PO0524,INV0555,"same PO, same amount"
+CASE030,same_creator_approver,standard,,PO0174,INV0169,creator == approver
+CASE031,same_creator_approver,standard,,PO0123,INV0113,creator == approver
+CASE032,same_creator_approver,standard,,PO0615,INV0583,creator == approver
+CASE033,same_creator_approver,standard,,PO0593,INV0563,creator == approver
+CASE034,same_creator_approver,standard,,PO0516,INV0516,creator == approver
+CASE035,same_creator_approver,standard,,PO0654,INV0623,creator == approver
+CASE036,same_creator_approver,standard,,PO0402,INV0382,creator == approver
+CASE037,same_creator_approver,standard,,PO0300,INV0289,creator == approver
+CASE038,new_vendor_high_value,evasive,VEN234,PO0244,INV0235,PO on day 9-14 after onboarding
+CASE039,new_vendor_high_value,evasive,VEN124,PO0058,INV0058,PO on day 9-14 after onboarding
+CASE040,new_vendor_high_value,standard,VEN261,PO0296,INV0275,PO within 7 days of onboarding
+CASE041,new_vendor_high_value,standard,VEN091,PO0027,INV0022,PO within 7 days of onboarding
+CASE042,new_vendor_high_value,standard,VEN254,PO0279,INV0263,PO within 7 days of onboarding
+CASE043,new_vendor_high_value,standard,VEN217,PO0195,INV0194,PO within 7 days of onboarding
+CASE044,new_vendor_high_value,standard,VEN139,PO0064,INV0061,PO within 7 days of onboarding
+CASE045,new_vendor_high_value,standard,VEN074,PO0012,INV0011,PO within 7 days of onboarding
+CASE046,contract_rate_mismatch,evasive,,PO0441,INV0437,inflated but under 1.3x
+CASE047,contract_rate_mismatch,evasive,,PO0192,INV0184,inflated but under 1.3x
+CASE048,contract_rate_mismatch,standard,,PO0180,INV0163,inflated 1.4x-2.3x
+CASE049,contract_rate_mismatch,standard,,PO0602,INV0607,inflated 1.4x-2.3x
+CASE050,contract_rate_mismatch,standard,,PO0121,INV0115,inflated 1.4x-2.3x
+CASE051,contract_rate_mismatch,standard,,PO0423,INV0394,inflated 1.4x-2.3x
+CASE052,contract_rate_mismatch,standard,,PO0139,INV0130,inflated 1.4x-2.3x
+CASE053,contract_rate_mismatch,standard,,PO0573,INV0569,inflated 1.4x-2.3x
+CASE054,vendor_employee_email,standard,VEN035,PO0418;PO0042,INV0393;INV0043,vendor email equals an employee email
+CASE055,vendor_employee_email,standard,VEN213,PO0638;PO0223,INV0606;INV0203,vendor email equals an employee email
+CASE056,vendor_employee_email,standard,VEN200,PO0405;PO0245,INV0385;INV0228,vendor email equals an employee email
+CASE057,vendor_employee_email,standard,VEN115,PO0467;PO0215,INV0455;INV0192,vendor email equals an employee email
+CASE058,vendor_employee_email,standard,VEN289,PO0508;PO0601,INV0466;INV0556,vendor email equals an employee email
+CASE059,vendor_employee_email,standard,VEN160,PO0265;PO0205,INV0247;INV0186,vendor email equals an employee email
+CASE060,vendor_employee_email,standard,VEN134,PO0230;PO0648,INV0226;INV0609,vendor email equals an employee email
+CASE061,vendor_employee_email,standard,VEN144,PO0346;PO0155,INV0326;INV0136,vendor email equals an employee email
+CASE062,category_mismatch,standard,,PO0465,INV0459,invoice category != PO category
+CASE063,category_mismatch,standard,,PO0370,INV0354,invoice category != PO category
+CASE064,category_mismatch,standard,,PO0464,INV0475,invoice category != PO category
+CASE065,category_mismatch,standard,,PO0442,INV0439,invoice category != PO category
+CASE066,category_mismatch,standard,,PO0099,INV0099,invoice category != PO category
+CASE067,category_mismatch,standard,,PO0341,INV0320,invoice category != PO category
+CASE068,category_mismatch,standard,,PO0349,INV0351,invoice category != PO category
+CASE069,category_mismatch,standard,,PO0577,INV0580,invoice category != PO category

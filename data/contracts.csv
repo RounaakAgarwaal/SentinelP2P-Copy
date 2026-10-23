@@ -10,9 +10,9 @@ CON008,VEN017,"The vendor shall provide catering services at an agreed rate of �
 CON009,VEN027,"The vendor shall provide catering services at an agreed rate of ₹23136.28 per event, inclusive of setup and service charges.",23136.28,2025-01-15,2027-01-15
 CON010,VEN029,"The vendor shall provide catering services at an agreed rate of ₹1612.73 per event, inclusive of setup and service charges.",1612.73,2025-01-01,2027-01-01
 CON011,VEN031,"The vendor shall provide office supplies at an agreed rate of ₹5266.32 per order, payable within the agreed payment terms.",5266.32,2025-01-28,2027-01-28
-CON012,VEN035,"The vendor shall provide catering services at an agreed rate of ₹4403.89 per event, inclusive of setup and service charges.",4403.89,2025-02-10,2027-02-10
-CON013,VEN036,"The vendor shall supply IT hardware equipment at an agreed rate of ₹23546.57 per unit/order, with delivery within 15 business days of order confirmation.",23546.57,2025-02-12,2027-02-12
-CON014,VEN037,The vendor shall provide logistics and courier services at an agreed rate of ₹2680.57 per shipment.,2680.57,2025-02-07,2027-02-07
+CON012,VEN036,"The vendor shall provide catering services at an agreed rate of ₹4403.89 per event, inclusive of setup and service charges.",4403.89,2025-02-10,2027-02-10
+CON013,VEN037,"The vendor shall supply IT hardware equipment at an agreed rate of ₹23546.57 per unit/order, with delivery within 15 business days of order confirmation.",23546.57,2025-02-12,2027-02-12
+CON014,VEN038,The vendor shall provide logistics and courier services at an agreed rate of ₹2680.57 per shipment.,2680.57,2025-02-07,2027-02-07
 CON015,VEN041,"The vendor shall provide catering services at an agreed rate of ₹15112.43 per event, inclusive of setup and service charges.",15112.43,2025-02-07,2027-02-07
 CON016,VEN042,The vendor shall provide logistics and courier services at an agreed rate of ₹15477.42 per shipment.,15477.42,2025-01-30,2027-01-30
 CON017,VEN043,"The vendor shall provide office supplies at an agreed rate of ₹15337.31 per order, payable within the agreed payment terms.",15337.31,2025-02-07,2027-02-07
@@ -33,45 +33,45 @@ CON031,VEN070,The vendor shall provide cleaning services at an agreed rate of �
 CON032,VEN071,"The vendor shall provide office supplies at an agreed rate of ₹4450.53 per order, payable within the agreed payment terms.",4450.53,2025-04-06,2027-04-06
 CON033,VEN072,The vendor shall provide printing and packaging materials at an agreed rate of ₹20836.73 per order.,20836.73,2025-04-14,2027-04-14
 CON034,VEN073,The vendor shall provide logistics and courier services at an agreed rate of ₹17581.32 per shipment.,17581.32,2025-04-06,2027-04-06
-CON035,VEN075,"The vendor shall supply IT hardware equipment at an agreed rate of ₹2064.86 per unit/order, with delivery within 15 business days of order confirmation.",2064.86,2025-04-14,2027-04-14
+CON035,VEN076,"The vendor shall supply IT hardware equipment at an agreed rate of ₹2064.86 per unit/order, with delivery within 15 business days of order confirmation.",2064.86,2025-04-14,2027-04-14
 CON036,VEN082,The vendor shall provide printing and packaging materials at an agreed rate of ₹8415.05 per order.,8415.05,2025-05-14,2027-05-14
-CON037,VEN084,"The vendor shall supply IT hardware equipment at an agreed rate of ₹11421.49 per unit/order, with delivery within 15 business days of order confirmation.",11421.49,2025-04-28,2027-04-28
-CON038,VEN086,The vendor shall provide printing and packaging materials at an agreed rate of ₹17684.95 per order.,17684.95,2025-05-04,2027-05-04
-CON039,VEN088,"The vendor shall provide catering services at an agreed rate of ₹9082.79 per event, inclusive of setup and service charges.",9082.79,2025-05-20,2027-05-20
-CON040,VEN089,"The vendor shall provide office supplies at an agreed rate of ₹10117.33 per order, payable within the agreed payment terms.",10117.33,2025-05-27,2027-05-27
+CON037,VEN083,"The vendor shall supply IT hardware equipment at an agreed rate of ₹11421.49 per unit/order, with delivery within 15 business days of order confirmation.",11421.49,2025-04-28,2027-04-28
+CON038,VEN085,The vendor shall provide printing and packaging materials at an agreed rate of ₹17684.95 per order.,17684.95,2025-05-04,2027-05-04
+CON039,VEN087,"The vendor shall provide catering services at an agreed rate of ₹9082.79 per event, inclusive of setup and service charges.",9082.79,2025-05-20,2027-05-20
+CON040,VEN088,"The vendor shall provide office supplies at an agreed rate of ₹10117.33 per order, payable within the agreed payment terms.",10117.33,2025-05-27,2027-05-27
 CON041,VEN094,"The vendor shall provide office supplies at an agreed rate of ₹4615.74 per order, payable within the agreed payment terms.",4615.74,2025-05-17,2027-05-17
 CON042,VEN096,"The vendor shall supply IT hardware equipment at an agreed rate of ₹18515.63 per unit/order, with delivery within 15 business days of order confirmation.",18515.63,2025-06-08,2027-06-08
-CON043,VEN098,The vendor shall provide logistics and courier services at an agreed rate of ₹14411.61 per shipment.,14411.61,2025-06-19,2027-06-19
-CON044,VEN100,The vendor shall provide logistics and courier services at an agreed rate of ₹5527.26 per shipment.,5527.26,2025-06-09,2027-06-09
-CON045,VEN101,The vendor shall provide cleaning services at an agreed rate of ₹12374.65 per month.,12374.65,2025-07-04,2027-07-04
-CON046,VEN104,"The vendor shall provide catering services at an agreed rate of ₹19633.52 per event, inclusive of setup and service charges.",19633.52,2025-07-08,2027-07-08
-CON047,VEN105,The vendor shall provide software licenses at an agreed rate of ₹17671.61 per license renewal cycle.,17671.61,2025-06-16,2027-06-16
-CON048,VEN109,"The vendor shall provide catering services at an agreed rate of ₹19481.24 per event, inclusive of setup and service charges.",19481.24,2025-07-09,2027-07-09
-CON049,VEN110,The vendor shall provide logistics and courier services at an agreed rate of ₹13620.1 per shipment.,13620.1,2025-07-27,2027-07-27
-CON050,VEN111,The vendor shall provide software licenses at an agreed rate of ₹13808.18 per license renewal cycle.,13808.18,2025-07-19,2027-07-19
-CON051,VEN113,The vendor shall provide printing and packaging materials at an agreed rate of ₹1476.59 per order.,1476.59,2025-07-19,2027-07-19
-CON052,VEN114,The vendor shall provide printing and packaging materials at an agreed rate of ₹3527.92 per order.,3527.92,2025-07-24,2027-07-24
-CON053,VEN118,The vendor shall provide software licenses at an agreed rate of ₹18653.74 per license renewal cycle.,18653.74,2025-07-17,2027-07-17
-CON054,VEN120,"The vendor shall supply IT hardware equipment at an agreed rate of ₹2186.65 per unit/order, with delivery within 15 business days of order confirmation.",2186.65,2025-08-05,2027-08-05
-CON055,VEN124,"The vendor shall provide catering services at an agreed rate of ₹15268.18 per event, inclusive of setup and service charges.",15268.18,2025-08-09,2027-08-09
-CON056,VEN125,The vendor shall provide cleaning services at an agreed rate of ₹3108.53 per month.,3108.53,2025-08-10,2027-08-10
-CON057,VEN128,The vendor shall provide cleaning services at an agreed rate of ₹18665.05 per month.,18665.05,2025-08-22,2027-08-22
-CON058,VEN129,"The vendor shall provide office supplies at an agreed rate of ₹5152.92 per order, payable within the agreed payment terms.",5152.92,2025-08-28,2027-08-28
-CON059,VEN132,"The vendor shall provide office supplies at an agreed rate of ₹22466.53 per order, payable within the agreed payment terms.",22466.53,2025-08-05,2027-08-05
-CON060,VEN134,"The vendor shall provide catering services at an agreed rate of ₹544.05 per event, inclusive of setup and service charges.",544.05,2025-08-29,2027-08-29
+CON043,VEN097,The vendor shall provide logistics and courier services at an agreed rate of ₹14411.61 per shipment.,14411.61,2025-06-19,2027-06-19
+CON044,VEN099,The vendor shall provide logistics and courier services at an agreed rate of ₹5527.26 per shipment.,5527.26,2025-06-09,2027-06-09
+CON045,VEN100,The vendor shall provide cleaning services at an agreed rate of ₹12374.65 per month.,12374.65,2025-07-04,2027-07-04
+CON046,VEN102,"The vendor shall provide catering services at an agreed rate of ₹19633.52 per event, inclusive of setup and service charges.",19633.52,2025-07-08,2027-07-08
+CON047,VEN103,The vendor shall provide software licenses at an agreed rate of ₹17671.61 per license renewal cycle.,17671.61,2025-06-16,2027-06-16
+CON048,VEN107,"The vendor shall provide catering services at an agreed rate of ₹19481.24 per event, inclusive of setup and service charges.",19481.24,2025-07-09,2027-07-09
+CON049,VEN108,The vendor shall provide logistics and courier services at an agreed rate of ₹13620.1 per shipment.,13620.1,2025-07-27,2027-07-27
+CON050,VEN109,The vendor shall provide software licenses at an agreed rate of ₹13808.18 per license renewal cycle.,13808.18,2025-07-19,2027-07-19
+CON051,VEN111,The vendor shall provide printing and packaging materials at an agreed rate of ₹1476.59 per order.,1476.59,2025-07-19,2027-07-19
+CON052,VEN112,The vendor shall provide printing and packaging materials at an agreed rate of ₹3527.92 per order.,3527.92,2025-07-24,2027-07-24
+CON053,VEN116,The vendor shall provide software licenses at an agreed rate of ₹18653.74 per license renewal cycle.,18653.74,2025-07-17,2027-07-17
+CON054,VEN118,"The vendor shall supply IT hardware equipment at an agreed rate of ₹2186.65 per unit/order, with delivery within 15 business days of order confirmation.",2186.65,2025-08-05,2027-08-05
+CON055,VEN122,"The vendor shall provide catering services at an agreed rate of ₹15268.18 per event, inclusive of setup and service charges.",15268.18,2025-08-09,2027-08-09
+CON056,VEN123,The vendor shall provide cleaning services at an agreed rate of ₹3108.53 per month.,3108.53,2025-08-10,2027-08-10
+CON057,VEN127,The vendor shall provide cleaning services at an agreed rate of ₹18665.05 per month.,18665.05,2025-08-22,2027-08-22
+CON058,VEN128,"The vendor shall provide office supplies at an agreed rate of ₹5152.92 per order, payable within the agreed payment terms.",5152.92,2025-08-28,2027-08-28
+CON059,VEN131,"The vendor shall provide office supplies at an agreed rate of ₹22466.53 per order, payable within the agreed payment terms.",22466.53,2025-08-05,2027-08-05
+CON060,VEN133,"The vendor shall provide catering services at an agreed rate of ₹544.05 per event, inclusive of setup and service charges.",544.05,2025-08-29,2027-08-29
 CON061,VEN138,"The vendor shall provide office supplies at an agreed rate of ₹5995.87 per order, payable within the agreed payment terms.",5995.87,2025-08-17,2027-08-17
 CON062,VEN140,"The vendor shall provide catering services at an agreed rate of ₹3113.89 per event, inclusive of setup and service charges.",3113.89,2025-09-11,2027-09-11
 CON063,VEN141,The vendor shall provide software licenses at an agreed rate of ₹18940.06 per license renewal cycle.,18940.06,2025-09-21,2027-09-21
 CON064,VEN142,"The vendor shall provide catering services at an agreed rate of ₹1818.1 per event, inclusive of setup and service charges.",1818.1,2025-09-04,2027-09-04
 CON065,VEN143,The vendor shall provide cleaning services at an agreed rate of ₹11951.44 per month.,11951.44,2025-09-04,2027-09-04
-CON066,VEN147,The vendor shall provide printing and packaging materials at an agreed rate of ₹17864.13 per order.,17864.13,2025-09-22,2027-09-22
-CON067,VEN149,"The vendor shall provide catering services at an agreed rate of ₹19053.43 per event, inclusive of setup and service charges.",19053.43,2025-09-30,2027-09-30
+CON066,VEN148,The vendor shall provide printing and packaging materials at an agreed rate of ₹17864.13 per order.,17864.13,2025-09-22,2027-09-22
+CON067,VEN150,"The vendor shall provide catering services at an agreed rate of ₹19053.43 per event, inclusive of setup and service charges.",19053.43,2025-09-30,2027-09-30
 CON068,VEN153,"The vendor shall provide office supplies at an agreed rate of ₹2150.39 per order, payable within the agreed payment terms.",2150.39,2025-10-09,2027-10-09
 CON069,VEN154,The vendor shall provide printing and packaging materials at an agreed rate of ₹13075.52 per order.,13075.52,2025-10-16,2027-10-16
 CON070,VEN155,"The vendor shall supply IT hardware equipment at an agreed rate of ₹7253.42 per unit/order, with delivery within 15 business days of order confirmation.",7253.42,2025-09-26,2027-09-26
 CON071,VEN157,"The vendor shall supply IT hardware equipment at an agreed rate of ₹20132.39 per unit/order, with delivery within 15 business days of order confirmation.",20132.39,2025-10-03,2027-10-03
 CON072,VEN158,The vendor shall provide cleaning services at an agreed rate of ₹11218.75 per month.,11218.75,2025-10-22,2027-10-22
-CON073,VEN160,The vendor shall provide software licenses at an agreed rate of ₹8788.37 per license renewal cycle.,8788.37,2025-10-30,2027-10-30
+CON073,VEN161,The vendor shall provide software licenses at an agreed rate of ₹8788.37 per license renewal cycle.,8788.37,2025-10-30,2027-10-30
 CON074,VEN166,"The vendor shall provide catering services at an agreed rate of ₹3279.49 per event, inclusive of setup and service charges.",3279.49,2025-11-10,2027-11-10
 CON075,VEN167,The vendor shall provide logistics and courier services at an agreed rate of ₹7436.66 per shipment.,7436.66,2025-10-30,2027-10-30
 CON076,VEN172,"The vendor shall supply IT hardware equipment at an agreed rate of ₹22879.1 per unit/order, with delivery within 15 business days of order confirmation.",22879.1,2025-10-23,2027-10-23
@@ -89,34 +89,34 @@ CON087,VEN188,The vendor shall provide printing and packaging materials at an ag
 CON088,VEN190,The vendor shall provide printing and packaging materials at an agreed rate of ₹7065.31 per order.,7065.31,2025-11-13,2027-11-13
 CON089,VEN191,The vendor shall provide software licenses at an agreed rate of ₹23828.6 per license renewal cycle.,23828.6,2025-12-03,2027-12-03
 CON090,VEN192,"The vendor shall provide catering services at an agreed rate of ₹12740.15 per event, inclusive of setup and service charges.",12740.15,2025-11-28,2027-11-28
-CON091,VEN195,The vendor shall provide cleaning services at an agreed rate of ₹1310.24 per month.,1310.24,2025-11-28,2027-11-28
-CON092,VEN197,"The vendor shall supply IT hardware equipment at an agreed rate of ₹24114.44 per unit/order, with delivery within 15 business days of order confirmation.",24114.44,2025-11-28,2027-11-28
-CON093,VEN198,The vendor shall provide cleaning services at an agreed rate of ₹14962.37 per month.,14962.37,2025-12-16,2027-12-16
-CON094,VEN199,"The vendor shall supply IT hardware equipment at an agreed rate of ₹22023.47 per unit/order, with delivery within 15 business days of order confirmation.",22023.47,2025-11-25,2027-11-25
+CON091,VEN194,The vendor shall provide cleaning services at an agreed rate of ₹1310.24 per month.,1310.24,2025-11-28,2027-11-28
+CON092,VEN196,"The vendor shall supply IT hardware equipment at an agreed rate of ₹24114.44 per unit/order, with delivery within 15 business days of order confirmation.",24114.44,2025-11-28,2027-11-28
+CON093,VEN197,The vendor shall provide cleaning services at an agreed rate of ₹14962.37 per month.,14962.37,2025-12-16,2027-12-16
+CON094,VEN198,"The vendor shall supply IT hardware equipment at an agreed rate of ₹22023.47 per unit/order, with delivery within 15 business days of order confirmation.",22023.47,2025-11-25,2027-11-25
 CON095,VEN201,"The vendor shall supply IT hardware equipment at an agreed rate of ₹18306.95 per unit/order, with delivery within 15 business days of order confirmation.",18306.95,2025-12-10,2027-12-10
 CON096,VEN202,The vendor shall provide logistics and courier services at an agreed rate of ₹19279.09 per shipment.,19279.09,2026-01-02,2028-01-02
-CON097,VEN204,The vendor shall provide cleaning services at an agreed rate of ₹16052.23 per month.,16052.23,2025-12-30,2027-12-30
-CON098,VEN208,The vendor shall provide logistics and courier services at an agreed rate of ₹7426.32 per shipment.,7426.32,2026-01-01,2028-01-01
-CON099,VEN209,The vendor shall provide printing and packaging materials at an agreed rate of ₹17659.43 per order.,17659.43,2026-01-11,2028-01-11
-CON100,VEN210,The vendor shall provide printing and packaging materials at an agreed rate of ₹3376.69 per order.,3376.69,2026-01-23,2028-01-23
-CON101,VEN211,"The vendor shall supply IT hardware equipment at an agreed rate of ₹17905.62 per unit/order, with delivery within 15 business days of order confirmation.",17905.62,2026-01-10,2028-01-10
-CON102,VEN213,"The vendor shall supply IT hardware equipment at an agreed rate of ₹12152.91 per unit/order, with delivery within 15 business days of order confirmation.",12152.91,2026-01-25,2028-01-25
-CON103,VEN220,"The vendor shall provide catering services at an agreed rate of ₹22526.09 per event, inclusive of setup and service charges.",22526.09,2026-02-10,2028-02-10
-CON104,VEN225,The vendor shall provide printing and packaging materials at an agreed rate of ₹24868.38 per order.,24868.38,2026-02-15,2028-02-15
-CON105,VEN226,The vendor shall provide software licenses at an agreed rate of ₹20007.66 per license renewal cycle.,20007.66,2026-03-05,2028-03-04
-CON106,VEN227,The vendor shall provide logistics and courier services at an agreed rate of ₹24973.11 per shipment.,24973.11,2026-02-25,2028-02-25
-CON107,VEN229,"The vendor shall supply IT hardware equipment at an agreed rate of ₹7198.91 per unit/order, with delivery within 15 business days of order confirmation.",7198.91,2026-03-03,2028-03-02
-CON108,VEN230,"The vendor shall provide office supplies at an agreed rate of ₹17474.72 per order, payable within the agreed payment terms.",17474.72,2026-03-08,2028-03-07
-CON109,VEN232,The vendor shall provide printing and packaging materials at an agreed rate of ₹12087.92 per order.,12087.92,2026-03-09,2028-03-08
-CON110,VEN233,"The vendor shall supply IT hardware equipment at an agreed rate of ₹3340.08 per unit/order, with delivery within 15 business days of order confirmation.",3340.08,2026-02-26,2028-02-26
-CON111,VEN234,"The vendor shall provide catering services at an agreed rate of ₹24526.43 per event, inclusive of setup and service charges.",24526.43,2026-02-19,2028-02-19
-CON112,VEN243,The vendor shall provide logistics and courier services at an agreed rate of ₹12029.38 per shipment.,12029.38,2026-04-02,2028-04-01
-CON113,VEN245,"The vendor shall provide office supplies at an agreed rate of ₹14060.09 per order, payable within the agreed payment terms.",14060.09,2026-03-29,2028-03-28
-CON114,VEN251,The vendor shall provide printing and packaging materials at an agreed rate of ₹16174.77 per order.,16174.77,2026-04-09,2028-04-08
-CON115,VEN252,The vendor shall provide cleaning services at an agreed rate of ₹22522.79 per month.,22522.79,2026-03-27,2028-03-26
-CON116,VEN253,"The vendor shall supply IT hardware equipment at an agreed rate of ₹4480.03 per unit/order, with delivery within 15 business days of order confirmation.",4480.03,2026-04-03,2028-04-02
-CON117,VEN254,"The vendor shall provide catering services at an agreed rate of ₹8156.83 per event, inclusive of setup and service charges.",8156.83,2026-04-10,2028-04-09
-CON118,VEN260,"The vendor shall provide catering services at an agreed rate of ₹16622.28 per event, inclusive of setup and service charges.",16622.28,2026-04-26,2028-04-25
+CON097,VEN203,The vendor shall provide cleaning services at an agreed rate of ₹16052.23 per month.,16052.23,2025-12-30,2027-12-30
+CON098,VEN207,The vendor shall provide logistics and courier services at an agreed rate of ₹7426.32 per shipment.,7426.32,2026-01-01,2028-01-01
+CON099,VEN208,The vendor shall provide printing and packaging materials at an agreed rate of ₹17659.43 per order.,17659.43,2026-01-11,2028-01-11
+CON100,VEN209,The vendor shall provide printing and packaging materials at an agreed rate of ₹3376.69 per order.,3376.69,2026-01-23,2028-01-23
+CON101,VEN210,"The vendor shall supply IT hardware equipment at an agreed rate of ₹17905.62 per unit/order, with delivery within 15 business days of order confirmation.",17905.62,2026-01-10,2028-01-10
+CON102,VEN212,"The vendor shall supply IT hardware equipment at an agreed rate of ₹12152.91 per unit/order, with delivery within 15 business days of order confirmation.",12152.91,2026-01-25,2028-01-25
+CON103,VEN219,"The vendor shall provide catering services at an agreed rate of ₹22526.09 per event, inclusive of setup and service charges.",22526.09,2026-02-10,2028-02-10
+CON104,VEN224,The vendor shall provide printing and packaging materials at an agreed rate of ₹24868.38 per order.,24868.38,2026-02-15,2028-02-15
+CON105,VEN225,The vendor shall provide software licenses at an agreed rate of ₹20007.66 per license renewal cycle.,20007.66,2026-03-05,2028-03-04
+CON106,VEN226,The vendor shall provide logistics and courier services at an agreed rate of ₹24973.11 per shipment.,24973.11,2026-02-25,2028-02-25
+CON107,VEN228,"The vendor shall supply IT hardware equipment at an agreed rate of ₹7198.91 per unit/order, with delivery within 15 business days of order confirmation.",7198.91,2026-03-03,2028-03-02
+CON108,VEN229,"The vendor shall provide office supplies at an agreed rate of ₹17474.72 per order, payable within the agreed payment terms.",17474.72,2026-03-08,2028-03-07
+CON109,VEN231,The vendor shall provide printing and packaging materials at an agreed rate of ₹12087.92 per order.,12087.92,2026-03-09,2028-03-08
+CON110,VEN232,"The vendor shall supply IT hardware equipment at an agreed rate of ₹3340.08 per unit/order, with delivery within 15 business days of order confirmation.",3340.08,2026-02-26,2028-02-26
+CON111,VEN233,"The vendor shall provide catering services at an agreed rate of ₹24526.43 per event, inclusive of setup and service charges.",24526.43,2026-02-19,2028-02-19
+CON112,VEN242,The vendor shall provide logistics and courier services at an agreed rate of ₹12029.38 per shipment.,12029.38,2026-04-02,2028-04-01
+CON113,VEN243,"The vendor shall provide office supplies at an agreed rate of ₹14060.09 per order, payable within the agreed payment terms.",14060.09,2026-03-29,2028-03-28
+CON114,VEN249,The vendor shall provide printing and packaging materials at an agreed rate of ₹16174.77 per order.,16174.77,2026-04-09,2028-04-08
+CON115,VEN250,The vendor shall provide cleaning services at an agreed rate of ₹22522.79 per month.,22522.79,2026-03-27,2028-03-26
+CON116,VEN251,"The vendor shall supply IT hardware equipment at an agreed rate of ₹4480.03 per unit/order, with delivery within 15 business days of order confirmation.",4480.03,2026-04-03,2028-04-02
+CON117,VEN252,"The vendor shall provide catering services at an agreed rate of ₹8156.83 per event, inclusive of setup and service charges.",8156.83,2026-04-10,2028-04-09
+CON118,VEN259,"The vendor shall provide catering services at an agreed rate of ₹16622.28 per event, inclusive of setup and service charges.",16622.28,2026-04-26,2028-04-25
 CON119,VEN269,The vendor shall provide cleaning services at an agreed rate of ₹24998.82 per month.,24998.82,2026-05-26,2028-05-25
 CON120,VEN271,The vendor shall provide printing and packaging materials at an agreed rate of ₹6025.94 per order.,6025.94,2026-05-25,2028-05-24
 CON121,VEN274,The vendor shall provide software licenses at an agreed rate of ₹6408.24 per license renewal cycle.,6408.24,2026-05-24,2028-05-23
@@ -126,9 +126,9 @@ CON124,VEN281,The vendor shall provide logistics and courier services at an agre
 CON125,VEN282,The vendor shall provide cleaning services at an agreed rate of ₹1626.55 per month.,1626.55,2026-05-21,2028-05-20
 CON126,VEN283,"The vendor shall provide office supplies at an agreed rate of ₹14734.7 per order, payable within the agreed payment terms.",14734.7,2026-05-26,2028-05-25
 CON127,VEN287,The vendor shall provide cleaning services at an agreed rate of ₹18147.68 per month.,18147.68,2026-05-21,2028-05-20
-CON128,VEN289,"The vendor shall provide office supplies at an agreed rate of ₹19019.82 per order, payable within the agreed payment terms.",19019.82,2026-05-30,2028-05-29
-CON129,VEN291,The vendor shall provide cleaning services at an agreed rate of ₹15714.56 per month.,15714.56,2026-07-01,2028-06-30
-CON130,VEN294,The vendor shall provide cleaning services at an agreed rate of ₹4908.22 per month.,4908.22,2026-06-27,2028-06-26
-CON131,VEN296,The vendor shall provide cleaning services at an agreed rate of ₹3023.73 per month.,3023.73,2026-06-24,2028-06-23
-CON132,VEN297,The vendor shall provide software licenses at an agreed rate of ₹14588.66 per license renewal cycle.,14588.66,2026-07-02,2028-07-01
-CON133,VEN301,The vendor shall provide cleaning services at an agreed rate of ₹1548.81 per month.,1548.81,2026-06-28,2028-06-27
+CON128,VEN290,"The vendor shall provide office supplies at an agreed rate of ₹19019.82 per order, payable within the agreed payment terms.",19019.82,2026-05-30,2028-05-29
+CON129,VEN292,The vendor shall provide cleaning services at an agreed rate of ₹15714.56 per month.,15714.56,2026-07-01,2028-06-30
+CON130,VEN295,The vendor shall provide cleaning services at an agreed rate of ₹4908.22 per month.,4908.22,2026-06-27,2028-06-26
+CON131,VEN297,The vendor shall provide cleaning services at an agreed rate of ₹3023.73 per month.,3023.73,2026-06-24,2028-06-23
+CON132,VEN298,The vendor shall provide software licenses at an agreed rate of ₹14588.66 per license renewal cycle.,14588.66,2026-07-02,2028-07-01
+CON133,VEN302,The vendor shall provide cleaning services at an agreed rate of ₹1548.81 per month.,1548.81,2026-06-28,2028-06-27
