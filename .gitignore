@@ -9,4 +9,20 @@ data/investigations.sqlite3-shm
 data/investigations.sqlite3-wal
 fy
 
+# Frontend dependencies and build artifacts
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Local environment files (keep checked-in examples)
+.env.*
+!.env.example
+backend/.env
+frontend/.env
+
+# Python backend/test caches
+backend/__pycache__/
+backend/.pytest_cache/
+backend/.mypy_cache/
+
 README.md
