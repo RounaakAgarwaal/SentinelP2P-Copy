@@ -15,9 +15,10 @@ def start_investigation(
     db_path: str | Path,
     *,
     invoice_id: str | None = None,
+    vendor_csv: str | Path | None = None,
 ) -> dict[str, Any]:
     """Build an investigation payload and persist the case plus internal-check evidence."""
-    payload = build_investigation_input(vendor_id, data_dir, invoice_id=invoice_id)
+    payload = build_investigation_input(vendor_id, data_dir, invoice_id=invoice_id, vendor_csv=vendor_csv)
     investigation = create_investigation(db_path, vendor_id, invoice_id=invoice_id)
     evidence_records = []
     for finding in payload["internal_verification_findings"]:

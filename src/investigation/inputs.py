@@ -60,11 +60,70 @@ def _sanitize_vendor(vendor: dict[str, str]) -> dict[str, str]:
     return safe
 
 
+def _vendor_from_csv(vendor_id: str, vendor_csv: str | Path) -> tuple[dict[str, str], dict[str, Any]]:
+    path = Path(vendor_csv)
+    if not path.is_file():
+        raise FileNotFoundError(f"Vendor CSV not found: {path}")
+    with path.open(newline="", encoding="utf-8-sig") as handle:
+        reader = csv.DictReader(handle)
+        rows = list(reader)
+        columns = set(reader.fieldnames or [])
+    required = {"vendor_id", "legal_or_public_name"}
+    missing = sorted(required - columns)
+    if missing:
+        raise ValueError(f"Vendor CSV is missing required columns: {', '.join(missing)}")
+
+    selected = next((row for row in rows if (row.get("vendor_id") or "").strip() == vendor_id), None)
+    if selected is None:
+        raise ValueError(f"Unknown vendor_id in {path}: {vendor_id}")
+
+    # Keep only the supplied vendor identity and research context. Exclude
+    # ground-truth and expected-behavior fields from state and search queries.
+    vendor = {
+        "vendor_id": (selected.get("vendor_id") or "").strip(),
+        "vendor_name": (selected.get("legal_or_public_name") or "").strip(),
+    }
+    for field in ("city", "state", "country", "official_website"):
+        if field in columns:
+            vendor[field] = (selected.get(field) or "").strip()
+    if "known_cin" in columns:
+        vendor["registration_number"] = (selected.get("known_cin") or "").strip()
+    if "known_registered_office" in columns:
+        vendor["address"] = (selected.get("known_registered_office") or "").strip()
+    source_info = {
+        "available": True,
+        "path": str(path),
+        "row_count": len(rows),
+        "selected_vendor_id": vendor["vendor_id"],
+        "required_columns": sorted(required),
+    }
+    return vendor, source_info
+
+
+def _unavailable_internal_findings(vendor_id: str) -> list[dict[str, Any]]:
+    check_types = (
+        "phone_match", "email_match", "bank_account_match", "registration_number_match",
+    )
+    return [{
+        "evidence_id": None,
+        "investigation_id": None,
+        "check_type": check_type,
+        "finding": "Internal check not performed: no real internal vendor or employee records were supplied for this CSV source.",
+        "matched_entity": None,
+        "verification_status": "unavailable_no_internal_records",
+        "coverage_status": "unavailable",
+        "source_type": "internal_records",
+        "created_at": None,
+        "vendor_id": vendor_id,
+    } for check_type in check_types]
+
+
 def build_investigation_input(
     vendor_id: str,
     data_dir: str | Path,
     *,
     invoice_id: str | None = None,
+    vendor_csv: str | Path | None = None,
 ) -> dict[str, Any]:
     """Return vendor, invoice, detector, and internal-check data without inventing missing results.
 
@@ -72,10 +131,41 @@ def build_investigation_input(
     detailed ``data_availability`` entries. Unknown vendors raise ``ValueError``.
     Bank account values in vendor details are masked before they leave this module.
     """
-    root = Path(data_dir)
     if not vendor_id or not vendor_id.strip():
         raise ValueError("vendor_id must be a non-empty string")
     vendor_id = vendor_id.strip()
+
+    if vendor_csv is not None:
+        if invoice_id is not None:
+            raise ValueError("invoice_id cannot be used with a vendor CSV that has no invoice relationships")
+        vendor, source_info = _vendor_from_csv(vendor_id, vendor_csv)
+        unavailable_reason = "not_loaded_for_external_vendor_source"
+        unavailable_info = {"available": False, "reason": unavailable_reason}
+        availability = {
+            "vendor_source": source_info,
+            "vendors": unavailable_info,
+            "internal_records": unavailable_info,
+            "employees": unavailable_info,
+            "invoices": unavailable_info,
+            "purchase_orders": unavailable_info,
+            "rule_flags": unavailable_info,
+            "gnn_scores": unavailable_info,
+            "rag_findings": unavailable_info,
+        }
+        return {
+            "vendor_id": vendor_id,
+            "invoice_id": None,
+            "vendor_details": _sanitize_vendor(vendor),
+            "related_invoices": [],
+            "internal_verification_findings": _unavailable_internal_findings(vendor_id),
+            "data_availability": availability,
+            "warnings": [
+                "No internal vendor, employee, invoice, PO, detector, GNN or RAG data was loaded for this real-vendor CSV source.",
+                "Internal verification checks are unavailable; no_match results have not been inferred.",
+            ],
+        }
+
+    root = Path(data_dir)
 
     vendors, vendor_info = _load_table(root, "vendors", {"vendor_id"})
     if not vendor_info["available"]:

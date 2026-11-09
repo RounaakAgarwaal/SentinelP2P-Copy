@@ -56,6 +56,8 @@ def initialize_database(db_path: str | Path) -> None:
                 verification_status TEXT NOT NULL,
                 source_type TEXT NOT NULL,
                 created_at TEXT NOT NULL,
+                source_url TEXT,
+                retrieved_at TEXT,
                 FOREIGN KEY (investigation_id) REFERENCES investigations(investigation_id)
                     ON DELETE CASCADE
             );
@@ -63,6 +65,15 @@ def initialize_database(db_path: str | Path) -> None:
                 ON evidence(investigation_id, created_at);
             """
         )
+        # Day 1 databases already have an evidence table without provenance columns.
+        # Add nullable fields in place so existing rows and investigations remain intact.
+        evidence_columns = {
+            row["name"] for row in connection.execute("PRAGMA table_info(evidence)").fetchall()
+        }
+        if "source_url" not in evidence_columns:
+            connection.execute("ALTER TABLE evidence ADD COLUMN source_url TEXT")
+        if "retrieved_at" not in evidence_columns:
+            connection.execute("ALTER TABLE evidence ADD COLUMN retrieved_at TEXT")
 
 
 def _row_dict(row: sqlite3.Row | None) -> dict[str, Any] | None:
@@ -171,6 +182,8 @@ def create_evidence(
     verification_status: str,
     source_type: str,
     created_at: str | None = None,
+    source_url: str | None = None,
+    retrieved_at: str | None = None,
 ) -> dict[str, Any]:
     import json
 
@@ -184,14 +197,16 @@ def create_evidence(
         "verification_status": verification_status,
         "source_type": source_type,
         "created_at": created_at or _now(),
+        "source_url": source_url,
+        "retrieved_at": retrieved_at,
     }
     with _connect(db_path) as connection:
         connection.execute(
             """INSERT INTO evidence
                (evidence_id, investigation_id, check_type, finding, matched_entity,
-                verification_status, source_type, created_at)
+                verification_status, source_type, created_at, source_url, retrieved_at)
                VALUES (:evidence_id, :investigation_id, :check_type, :finding, :matched_entity,
-                       :verification_status, :source_type, :created_at)""",
+                       :verification_status, :source_type, :created_at, :source_url, :retrieved_at)""",
             record,
         )
     record["matched_entity"] = json.loads(record["matched_entity"]) if record["matched_entity"] else None
