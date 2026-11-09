@@ -3,6 +3,9 @@ __pycache__/
 *.pyc
 .env
 qdrant_data/
+data/investigations.sqlite3
+data/investigations.sqlite3-shm
+data/investigations.sqlite3-wal
 fy
 
 README.md
