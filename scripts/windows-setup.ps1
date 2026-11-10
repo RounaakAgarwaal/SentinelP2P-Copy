@@ -7,7 +7,12 @@ function Fail([string]$Message) { throw "setup: $Message" }
 function Get-CommandPath([string]$Name) {
     $item = Get-Command $Name -ErrorAction SilentlyContinue | Select-Object -First 1
     if (-not $item) { return $null }
-    return $item.Source
+    # ApplicationInfo exposes Path; Source is not consistently populated for
+    # native executables across Windows PowerShell 5.1 and PowerShell 7.
+    if ($item.Path) { return $item.Path }
+    if ($item.Source) { return $item.Source }
+    if ($item.Definition) { return $item.Definition }
+    return $null
 }
 function Test-PythonVersion([string]$Executable) {
     $v = & $Executable -c 'import sys; print("%d.%d" % sys.version_info[:2])' 2>$null

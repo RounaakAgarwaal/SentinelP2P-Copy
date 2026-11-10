@@ -176,9 +176,8 @@ that environment's Python executable.
   and optional dependencies.
 - Ollama models have substantial disk and memory requirements and must be
   selected and installed by the user.
-- Windows process orchestration is implemented with PowerShell and is covered
-  by CI, but GPU-specific ML operation depends on the user's driver and Python
-  environment.
+- Windows process orchestration is implemented with PowerShell; GPU-specific
+  ML operation depends on the user's driver and Python environment.
 - This application is an auditor support tool. Human auditors retain all
   decisions; SentinelP2P does not execute or release payments.
 
