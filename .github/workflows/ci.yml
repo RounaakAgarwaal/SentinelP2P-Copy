@@ -1,0 +1,109 @@
+name: Setup and application checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  local-setup:
+    name: ${{ matrix.os }} setup, tests, and serving
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - uses: astral-sh/setup-uv@v5
+
+      - name: Validate Linux lifecycle scripts
+        if: runner.os == 'Linux'
+        run: bash -n setup.sh start.sh stop.sh
+
+      - name: Run project setup on Linux
+        if: runner.os == 'Linux'
+        run: ./setup.sh
+
+      - name: Run project setup on Windows
+        if: runner.os == 'Windows'
+        shell: cmd
+        run: setup.bat
+
+      - name: Install Python test dependencies (Linux)
+        if: runner.os == 'Linux'
+        run: uv pip install --python .venv/bin/python -r requirements-dev.txt
+
+      - name: Install Python test dependencies (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: uv pip install --python .venv\Scripts\python.exe -r requirements-dev.txt
+
+      - name: Run Python test suite (Linux)
+        if: runner.os == 'Linux'
+        run: .venv/bin/python -m unittest discover -s tests -v
+
+      - name: Run Python test suite (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: .\.venv\Scripts\python.exe -m unittest discover -s tests -v
+
+      - name: Verify production serving and stop processes (Linux)
+        if: runner.os == 'Linux'
+        shell: bash
+        run: |
+          set -euo pipefail
+          ./start.sh
+          trap './stop.sh' EXIT
+          .venv/bin/python - <<'PY'
+          import urllib.error
+          import urllib.request
+
+          base = "http://127.0.0.1:8000"
+          for path in ("/api/health", "/", "/vendors"):
+              with urllib.request.urlopen(base + path, timeout=5) as response:
+                  assert response.status == 200, (path, response.status)
+          try:
+              urllib.request.urlopen(base + "/api/ci-unknown-route", timeout=5)
+          except urllib.error.HTTPError as error:
+              assert error.code == 404, error.code
+          else:
+              raise AssertionError("Unknown API route should return 404")
+          PY
+
+      - name: Verify production serving and stop processes (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          try {
+            cmd /c start.bat
+            if ($LASTEXITCODE -ne 0) { throw 'start.bat failed' }
+            foreach ($Path in @('/api/health', '/', '/vendors')) {
+              $Response = Invoke-WebRequest "http://127.0.0.1:8000$Path" -TimeoutSec 10
+              if ($Response.StatusCode -ne 200) { throw "Unexpected status for $Path" }
+            }
+            try {
+              Invoke-WebRequest 'http://127.0.0.1:8000/api/ci-unknown-route' -TimeoutSec 5
+              throw 'Unknown API route did not return 404'
+            } catch {
+              if ($_.Exception.Response.StatusCode.value__ -ne 404) { throw }
+            }
+          } finally {
+            cmd /c stop.bat
+          }

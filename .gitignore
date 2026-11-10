@@ -25,4 +25,38 @@ backend/__pycache__/
 backend/.pytest_cache/
 backend/.mypy_cache/
 
-README.md
+# Local setup-script process state and logs
+.sentinelp2p/
+
+!README.md
+
+# Local databases and generated runtime artifacts. Keep source datasets and
+# explicitly versioned demonstration fixtures available to fresh clones.
+*.sqlite
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.pkl
+*.pickle
+*.joblib
+*.npy
+*.npz
+*.parquet
+*.feather
+*.log
+*.pid
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Generated detector/training outputs, while preserving committed source and
+# test fixtures (including test_data/real_vendor_test.csv).
+data/generated/
+data/processed/
+data/model_artifacts/
+data/detector_outputs/

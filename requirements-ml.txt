@@ -1,0 +1,12 @@
+# Optional dataset generation, model training, and RAG-scoring dependencies.
+# This is intentionally separate from normal application startup.
+pandas>=2.0,<4
+numpy>=1.26,<3
+scikit-learn>=1.4,<2
+
+Faker>=24,<40
+torch>=2.2,<3
+torch-geometric>=2.5,<3
+sentence-transformers>=3,<6
+qdrant-client>=1.9,<2
+neo4j>=5,<7

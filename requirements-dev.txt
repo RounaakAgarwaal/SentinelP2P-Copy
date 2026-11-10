@@ -1,0 +1,3 @@
+# Python test dependencies. Install this only when running the test suite.
+-r backend/requirements.txt
+httpx>=0.27,<1

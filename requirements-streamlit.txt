@@ -1,0 +1,6 @@
+# Optional dependencies used by dashboard.py. Install these in addition to the
+# backend group only when enabling the Streamlit UI.
+streamlit>=1.35,<2
+pandas>=2.0,<4
+numpy>=1.26,<3
+scikit-learn>=1.4,<2

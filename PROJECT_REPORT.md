@@ -159,39 +159,42 @@ Re-run column answers: do I execute this file every time I present?
 
 ---
 
-## Libraries to install
+## Dependency groups and installation
 
-No lockfile in the repo. Use Python 3.10+. Create a venv, then install the groups you actually need.
+The project supports Python 3.10 or newer. The current frontend uses Vite 7 and requires Node.js 20.19+ or 22.12+; use a supported Node.js LTS release. Setup tooling should check these requirements and must not upgrade Python or Node automatically. The inspected development host had Python 3.12.3 and Node.js 24.13.1.
 
-**Minimum for a Streamlit-only demo:**
+Python dependencies are grouped so normal API startup does not install model-training packages:
 
-```bash
-pip install streamlit pandas numpy scikit-learn
-```
+| File | Contents | Use |
+|---|---|---|
+| `backend/requirements.txt` | FastAPI, Uvicorn, LangGraph, Requests, python-dotenv | API and investigation workflow |
+| `requirements-streamlit.txt` | Streamlit, pandas, NumPy, scikit-learn | Optional Streamlit dashboard; install alongside the backend group for the combined app |
+| `requirements-ml.txt` | pandas, NumPy, scikit-learn, Faker, PyTorch, PyG, Sentence Transformers, Qdrant, Neo4j | Optional data generation, training, RAG scoring, and Neo4j tools |
+| `requirements-dev.txt` | Backend set plus HTTPX | Python API/unit tests |
+| `requirements-phase3.txt` | Existing LangGraph and Requests pair | Lightweight investigation CLI/workflow |
 
-Contract Search will fall back to TF-IDF if `sentence-transformers` is missing. Overview, Review, and Evaluation work without torch, Neo4j, or Qdrant because scores are already in CSV.
-
-| Package | Install | Used by | Demo? |
-|---|---|---|---|
-| streamlit | `pip install streamlit` | `dashboard.py` | Required to present |
-| pandas | `pip install pandas` | Almost every script | Required |
-| numpy | `pip install numpy` | dashboard RAG search, GNN, graph, `contract_rag` | Required |
-| scikit-learn | `pip install scikit-learn` | GNN metrics/CV; TF-IDF fallback in dashboard and `contract_rag` | Recommended (Contract Search fallback) |
-| Faker | `pip install Faker` | `generate_dataset.py` only | Not needed if you keep existing CSVs |
-| torch | `pip install torch` (CPU wheel is enough) | `build_graph.py`, `train_gnn.py` | Not needed to present precomputed scores |
-| torch-geometric | `pip install torch-geometric` | HeteroData, HeteroConv, SAGEConv, ToUndirected | Not needed to present |
-| sentence-transformers | `pip install sentence-transformers` | `contract_rag` default embedder; dashboard Contract Search | Optional. First use downloads `all-MiniLM-L6-v2` (~80MB). |
-| qdrant-client | `pip install qdrant-client` | `src/rag/contract_rag.py` vector index (memory or `--qdrant-path`) | Not needed at demo time; dashboard does not query Qdrant |
-| neo4j | `pip install neo4j` | `load_to_neo4j.py`, `fraud_checks.py` | Only with a Neo4j server running |
-| python-dotenv | `pip install python-dotenv` | Loads repo-root `.env` for Neo4j | Only with Neo4j |
-
-One-liner for a full research machine:
+For an already-active development environment, install only the required group into that environment; setup tooling must not replace or upgrade it implicitly. On a clean clone, create a project environment explicitly:
 
 ```bash
-pip install streamlit pandas numpy scikit-learn Faker torch torch-geometric sentence-transformers qdrant-client neo4j python-dotenv
+python3 -m venv .venv
 ```
 
-`torch-geometric` may need a matching torch build; follow the PyG install matrix if `import torch_geometric` fails.
+Activate `.venv`, then install the selected group:
+
+```bash
+python -m pip install -r backend/requirements.txt       # API / normal application
+python -m pip install -r requirements-streamlit.txt      # optional dashboard dependencies
+python -m pip install -r requirements-ml.txt             # optional training and RAG tooling
+python -m pip install -r requirements-dev.txt            # tests
+npm ci --prefix frontend
+npm run build --prefix frontend
+```
+
+On Windows, use `py -3 -m venv .venv`, activate with `.venv\\Scripts\\activate`, then use the same `python -m pip` and npm commands. The frontend lockfile is installed with `npm ci`.
+
+The ML group is optional and installs large CPU/GPU-related packages. Check PyTorch Geometric compatibility against the chosen PyTorch build before training. Sentence Transformers can download `all-MiniLM-L6-v2` when explicitly used; it is absent from normal backend and Streamlit groups. Streamlit Contract Search falls back to TF-IDF without that package. Installation and startup must not run dataset generation, training, or scoring commands.
+
+The root `.env.example` documents data paths, CORS, the frontend build API URL, optional Ollama, optional Tavily, and optional Neo4j settings. Backend configuration loads the repository-root `.env` on Linux and Windows, with existing process environment values taking precedence. Copy the example only if `.env` is absent; do not replace user settings or secrets.
 
 ---
 
