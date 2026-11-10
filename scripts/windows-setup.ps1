@@ -15,10 +15,16 @@ function Get-CommandPath([string]$Name) {
     return $null
 }
 function Test-PythonVersion([string]$Executable) {
-    $v = & $Executable -c 'import sys; print("%d.%d" % sys.version_info[:2])' 2>$null
+    $versionParts = (& $Executable -c 'import sys; print(sys.version_info[0], sys.version_info[1])' 2>$null) -join ' '
     if ($LASTEXITCODE -ne 0) { Fail "Could not run Python at $Executable" }
-    $parts = $v.Split('.') | ForEach-Object { [int]$_ }
-    if ($parts[0] -lt 3 -or ($parts[0] -eq 3 -and $parts[1] -lt 10)) {
+    $parts = $versionParts.Trim() -split '\s+'
+    if ($parts.Count -ne 2 -or $parts[0] -notmatch '^\d+$' -or $parts[1] -notmatch '^\d+$') {
+        Fail "Could not parse Python version output from $Executable"
+    }
+    $major = [int]$parts[0]
+    $minor = [int]$parts[1]
+    $v = "$major.$minor"
+    if ($major -lt 3 -or ($major -eq 3 -and $minor -lt 10)) {
         Fail "Python 3.10+ is required; found $v. No system version was changed."
     }
     return $v
